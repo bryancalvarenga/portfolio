@@ -1,0 +1,39 @@
+header {
+    padding: 1.5rem;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-navbar {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: -0.01562em;
+}
+
+.logo-navbar a{
+    color: var(--color-text-primary);
+    text-decoration: none;
+}
+
+.menu-navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: var(--color-text-primary);
+    transition: color 0.3 ease; 
+}
+
+.social-icon:hover {
+    color: var(--color-link-hover);
+}
