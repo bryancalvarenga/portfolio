@@ -174,7 +174,7 @@ main {
 }
 
 .skills-section {
-    padding: 1rem 4rem;
+    padding: 1rem 0.5rem;
     background: linear-gradient(to bottom, var(--color-background), var(--color-background-light));
 }
 
@@ -191,7 +191,7 @@ main {
 
 .skills-header p{
     color: var(--color-text-secondary);
-    max-width: 42rem;
+    min-width: 22rem;
     margin-left: auto;
     margin-right: auto;
 }
