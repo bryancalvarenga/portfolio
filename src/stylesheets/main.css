@@ -91,6 +91,7 @@ main {
     font-weight: bold;
     color: var(--color-text-primary);
     margin-bottom: 1rem;
+    line-height: 2.5rem
 }
 
 .profile-about {
@@ -191,7 +192,7 @@ main {
 
 .skills-header p{
     color: var(--color-text-secondary);
-    min-width: 22rem;
+    max-width: 45rem;
     margin-left: auto;
     margin-right: auto;
 }

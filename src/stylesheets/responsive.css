@@ -11,9 +11,9 @@
     }
 }
 
-@media (min-width: 640px) {
+@media (max-width: 640px) {
     .links-container {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
 
