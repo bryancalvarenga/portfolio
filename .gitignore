@@ -1,0 +1,70 @@
+# === Dependências e builds ===
+node_modules/
+dist/
+build/
+.cache/
+.tmp/
+.env
+.env.local
+.env.*.local
+
+# === Sistema operacional ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# === Editores e IDEs ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Logs e relatórios ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# === Arquivos temporários ===
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+*.lock
+
+# === Mapas de código (dev only) ===
+*.map
+
+# === Cache de ferramentas ===
+/.sass-cache
+/.parcel-cache
+/.eslintcache
+
+# === Gerados por VS Code Live Server ===
+*.localhost
+*.tmp.html
+
+# === Gerados por sistemas de build ===
+coverage/
+report/
+reports/
+
+# === Backup de uploads ou imagens originais ===
+/src/assets/originals/
+/src/assets/raw/
+
+# === Arquivos de design ou docs locais ===
+*.psd
+*.ai
+*.xd
+*.sketch
+*.zip
+*.rar
+
+# === Sistema Docker (se tiver docker-compose futuramente) ===
+/.docker/
+docker-compose.override.yml
+*.pid
