@@ -56,7 +56,6 @@ section[id] { scroll-margin-top: 84px; }
 section { padding-block: var(--space-section-y); }
 #hero, header.hero { padding-block: var(--space-hero-y); }
 
-/* contato com um pouco mais de altura (marca melhor a seção) */
 #contato { min-height: 60vh; }
 
 /* reveal clean */
@@ -125,6 +124,15 @@ section { padding-block: var(--space-section-y); }
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(130,87,230,.45);
+}
+
+/* Apenas para mobile: inverte ordem de colunas */
+
+@media (max-width: 991.98px) {
+  .reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 /* =========================================================
@@ -201,14 +209,13 @@ section { padding-block: var(--space-section-y); }
   #formacao-experiencia .tl-head { gap: .5rem; }
 }
 
-/* reveal dedicado (opcional) */
 @media (prefers-reduced-motion: no-preference) {
   #formacao-experiencia .fx-card { opacity: 0; transform: translateY(10px); transition: opacity .45s ease, transform .45s ease; }
   #formacao-experiencia .fx-card.in { opacity: 1; transform: translateY(0); }
 }
 
 /* =========================================================
-   FORMULÁRIOS (tema escuro)
+   FORMULÁRIOS
 ========================================================= */
 .form-control, .form-select {
   background: var(--surface-1);
@@ -260,7 +267,12 @@ section { padding-block: var(--space-section-y); }
   box-shadow: 0 0 0 .2rem rgba(130,87,230,.35);
 }
 
-/* offcanvas lateral esquerdo (escopo por id) */
+/* Off Canvas */
+.offcanvas {
+  z-index: 2000 !important;
+}
+
+/* offcanvas lateral esquerdo */
 #mobileNav.offcanvas-start {
   --bs-offcanvas-width: min(88vw, 360px);
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
@@ -277,13 +289,13 @@ section { padding-block: var(--space-section-y); }
   color: #fff;
 }
 
-/* por garantia: não exibir offcanvas no desktop */
+/* Não exibir offcanvas no desktop */
 @media (min-width: 992px) {
   #mobileNav { display: none !important; visibility: hidden !important; }
 }
 
 /* =========================================================
-   BOTÕES GLOBAIS (unifica estilo do site)
+   BOTÕES GLOBAIS
 ========================================================= */
 .btn-primary {
   background: linear-gradient(90deg, #8b5cf6, #a855f7);
@@ -317,4 +329,9 @@ section { padding-block: var(--space-section-y); }
 /* =========================================================
    RODAPÉ
 ========================================================= */
-footer { border-top: 1px solid rgba(255,255,255,.08); color: var(--muted-color); padding-top: 3rem; margin-top: 2rem; }
+footer { 
+  border-top: 1px solid rgba(255,255,255,.08); 
+  color: var(--muted-color); 
+  padding-top: 3rem; 
+  margin-top: 2rem; 
+}
