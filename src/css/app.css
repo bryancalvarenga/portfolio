@@ -335,3 +335,84 @@ footer {
   padding-top: 3rem; 
   margin-top: 2rem; 
 }
+
+/* =========================================================
+   SELETOR DE IDIOMA
+========================================================= */
+
+.language-dropdown .dropdown-menu.language-menu[data-bs-popper] {
+  left: 0 !important;
+  right: auto !important;
+  margin-top: .5rem;
+  transform: translate3d(0,0,0) !important;
+}
+
+.dropdown-menu.language-menu.show {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(7rem, 1fr));
+  gap: .25rem .75rem;
+}
+
+.language-dropdown { position: relative; }
+.lang-btn {
+  background: #121216;
+  border-color: #2a2d35;
+  color: #e6e6e6;
+}
+.lang-btn:hover, .lang-btn:focus { border-color: #6f42c1; box-shadow: none; }
+.fi { border-radius: 3px; }
+.navbar { overflow: visible; } /* evita cortar o dropdown */
+
+.language-menu {
+  --bs-dropdown-min-width: 16rem;
+  min-width: 16rem;
+  width: 16rem;
+  border-radius: .75rem;
+  padding: .5rem !important;
+}
+.dropdown-menu.language-menu.show {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(7rem, 1fr));
+  gap: .25rem .75rem;
+}
+
+/* Itens */
+.language-menu .dropdown-item {
+  display: flex !important;
+  align-items: center;
+  gap: .5rem;
+  white-space: nowrap;
+  border-radius: .5rem;
+  font-weight: 600;
+}
+.language-menu .dropdown-item:hover,
+.language-menu .dropdown-item:focus {
+  background: #6f42c1 !important;
+  color: #fff !important;
+}
+
+/* Alinhar embaixo do botão (desktop). Requer data-bs-display="static" */
+.language-dropdown .dropdown-menu.language-menu[data-bs-popper] {
+  left: 0 !important;
+  right: auto !important;
+  margin-top: .5rem;
+  transform: translate3d(0,0,0) !important;
+}
+
+/* Responsivo: esconder do header no mobile; offcanvas só no mobile */
+@media (max-width: 991.98px) {
+  .language-dropdown { display: none !important; }        /* header some no mobile */
+  .language-dropdown-mobile { display: block !important; } /* offcanvas aparece no mobile */
+}
+@media (min-width: 992px) {
+  .language-dropdown-mobile { display: none !important; }  /* offcanvas some no desktop */
+}
+
+/* Telas muito estreitas: 1 coluna */
+@media (max-width: 380px) {
+  .dropdown-menu.language-menu.show {
+    grid-template-columns: 1fr;
+    min-width: 12rem;
+    width: auto;
+  }
+}

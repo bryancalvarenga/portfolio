@@ -5,9 +5,26 @@
  *  2) Atualização do ano no footer
  *  3) Validação Bootstrap
  *  4) Animações simples de entrada (reveal)
- *  5) Fechamento automático do offcanvas (mobile)
+ *  5) Offcanvas: fechar ao clicar em links (mas ignorar seletor de idioma)
  * =======================================================*/
 
+// ----- FIX: dropdown dentro do offcanvas não fecha o offcanvas -----
+(() => {
+  const offcanvasEl = document.getElementById('mobileNav');
+  const dropdownBtn = document.getElementById('langDropdownMobile');
+  if (!offcanvasEl || !dropdownBtn) return;
+
+  // Bloqueia o clique “subir” para o backdrop (sem capturar, para não travar outros handlers)
+  dropdownBtn.addEventListener('click', (e) => e.stopPropagation());
+
+  let lockOffcanvas = false;
+  dropdownBtn.addEventListener('show.bs.dropdown', () => { lockOffcanvas = true; });
+  dropdownBtn.addEventListener('hide.bs.dropdown', () => { lockOffcanvas = false; });
+
+  offcanvasEl.addEventListener('hide.bs.offcanvas', (e) => {
+    if (lockOffcanvas) e.preventDefault();
+  });
+})();
 
 /* ===================================
  * 1) Lucide icons
@@ -21,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initOffcanvasAutoClose();
 });
 
-
 /* ===================================
  * 2) Atualização do ano no footer
  * =================================== */
@@ -29,7 +45,6 @@ function updateFooterYear() {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 }
-
 
 /* ===================================
  * 3) Validação de formulários (Bootstrap)
@@ -46,7 +61,6 @@ function initBootstrapValidation() {
     });
   });
 }
-
 
 /* ===================================
  * 4) Animações Reveal simples e clean
@@ -76,15 +90,19 @@ function initReveal() {
   targets.forEach(el => io.observe(el));
 }
 
-
 /* ===================================
- * 5) Offcanvas (fecha ao clicar)
+ * 5) Offcanvas (fecha ao clicar em links válidos)
+ *    - Ignora o seletor de idioma e seus itens
  * =================================== */
 function initOffcanvasAutoClose() {
   const off = document.getElementById('mobileNav');
   if (!off || !window.bootstrap?.Offcanvas) return;
-  off.querySelectorAll('a.nav-link, .btn').forEach(a => {
-    a.addEventListener('click', () => {
+
+  off.querySelectorAll('a.nav-link, .btn').forEach(el => {
+    // Não fechar ao interagir com o seletor de idioma
+    if (el.closest('.language-dropdown-mobile')) return;
+    // CTA ou outros botões dentro do offcanvas podem fechar normalmente
+    el.addEventListener('click', () => {
       const inst = bootstrap.Offcanvas.getInstance(off)
         || bootstrap.Offcanvas.getOrCreateInstance(off);
       inst?.hide();

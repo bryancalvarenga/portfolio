@@ -1,276 +1,618 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfólio — Bryan Alvarenga</title>
-  <meta name="description" content="Portfólio de Bryan Alvarenga — Desenvolvedor web (PHP, Java, Spring Boot, MySQL, Docker). Veja projetos, habilidades e entre em contato." />
-  <meta name="author" content="Bryan C. Alvarenga" />
-  <meta property="og:title" content="Portfólio — Bryan Alvarenga" />
-  <meta property="og:description" content="Dev Web (PHP, Java, MySQL, Docker). Projetos, habilidades e contato." />
-  <meta property="og:type" content="website" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio — Bryan Alvarenga</title>
+    <meta
+      name="description"
+      content="Portfólio de Bryan Alvarenga — Desenvolvedor web (PHP, Java, Spring Boot, MySQL, Docker). Veja projetos, habilidades e entre em contato."
+    />
+    <meta name="author" content="Bryan C. Alvarenga" />
+    <meta property="og:title" content="Portfólio — Bryan Alvarenga" />
+    <meta
+      property="og:description"
+      content="Dev Web (PHP, Java, MySQL, Docker). Projetos, habilidades e contato."
+    />
+    <meta property="og:type" content="website" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/icon/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/assets/icon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./src/assets/icon/favicon.ico"
+    />
 
-  <link rel="stylesheet" href="./src/css/app.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- =========================================================
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/app.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="a11y.skipToContent"
+      >Pular para o conteúdo</a
+    >
+
+    <!-- =========================================================
        NAVBAR
   ========================================================== -->
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileNav"
+          aria-controls="mobileNav"
+          aria-label="Abrir menu"
+          data-i18n-attr="aria-label"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler d-lg-none" type="button"
-              data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
-              aria-controls="mobileNav" aria-label="Abrir menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- SELETOR DE IDIOMA (desktop) -->
+        <div
+          class="dropdown language-dropdown d-none d-lg-flex align-items-center me-3"
+        >
+          <button
+            class="btn btn-sm lang-btn d-inline-flex align-items-center gap-1"
+            id="langDropdownDesktop"
+            data-bs-toggle="dropdown"
+            data-bs-display="static"
+            aria-expanded="false"
+            data-i18n="a11y.languageSelector"
+            data-i18n-attr="aria-label"
+          >
+            <span class="fi fi-br lang-flag"></span>
+            <span class="lang-label">PT</span>
+          </button>
 
-      <div class="collapse navbar-collapse d-none d-lg-flex">
-        <ul class="navbar-nav align-items-lg-center gap-lg-2 mx-lg-auto">
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formacao-experiencia">Experiência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-        <a class="btn btn-sm btn-primary ms-lg-3" href="#contato">Vamos conversar</a>
+          <div
+            class="dropdown-menu dropdown-menu-dark p-2 shadow-lg language-menu"
+          >
+            <button
+              class="dropdown-item d-flex align-items-center gap-2"
+              data-lang="pt"
+            >
+              <span class="fi fi-br"></span>PT
+            </button>
+            <button
+              class="dropdown-item d-flex align-items-center gap-2"
+              data-lang="en"
+            >
+              <span class="fi fi-gb"></span>EN
+            </button>
+            <button
+              class="dropdown-item d-flex align-items-center gap-2"
+              data-lang="es"
+            >
+              <span class="fi fi-es"></span>ES
+            </button>
+            <button
+              class="dropdown-item d-flex align-items-center gap-2"
+              data-lang="ja"
+            >
+              <span class="fi fi-jp"></span>JP
+            </button>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse d-none d-lg-flex">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2 mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre" data-i18n="nav.sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos" data-i18n="nav.projetos"
+                >Projetos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#habilidades"
+                data-i18n="nav.habilidades"
+                >Habilidades</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#formacao-experiencia"
+                data-i18n="nav.experiencia"
+                >Experiência</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato" data-i18n="nav.contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+          <a
+            class="btn btn-sm btn-primary ms-lg-3"
+            href="#contato"
+            data-i18n="cta.vamosConversar"
+            >Vamos conversar</a
+          >
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- =========================================================
+    <!-- =========================================================
        OFFCANVAS MENU (mobile)
   ========================================================== -->
-  <div class="offcanvas offcanvas-start text-bg-dark border-0"
-       id="mobileNav" tabindex="-1" aria-labelledby="mobileNavLabel" data-bs-scroll="true">
-    <div class="offcanvas-header pb-2">
-      <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
-    </div>
-    <div class="offcanvas-body pt-0">
-      <ul class="nav flex-column nav-mobile gap-1">
-        <li><a class="nav-link" href="#sobre">Sobre</a></li>
-        <li><a class="nav-link" href="#projetos">Projetos</a></li>
-        <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
-        <li><a class="nav-link" href="#formacao-experiencia">Experiência</a></li>
-        <li><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-      <div class="mt-3">
-        <a class="btn btn-primary w-100 py-2" href="#contato">Vamos conversar</a>
+    <div
+      class="offcanvas offcanvas-start text-bg-dark border-0"
+      id="mobileNav"
+      tabindex="-1"
+      aria-labelledby="mobileNavLabel"
+      data-bs-scroll="true"
+    >
+      <div class="offcanvas-header pb-2 mb-3">
+        <h5 class="offcanvas-title" id="mobileNavLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar"
+        ></button>
       </div>
-    </div>
-  </div>
-
-  <!-- =========================================================
-       HERO
-  ========================================================== -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero-card p-4 p-md-5">
-        <div class="row align-items-center g-4 g-lg-5 reverse-on-mobile">
-          <div class="col-12 col-lg-7">
-            <span class="badge rounded-pill mb-3">Disponível para novos projetos</span>
-            <h1 class="mb-3">Olá, sou <span class="text-gradient">Bryan Alvarenga</span></h1>
-            <p class="lead mb-4">Desenvolvedor web apaixonado por tecnologia e por transformar ideias em sistemas funcionais. Focado em back-end com PHP, Java e MySQL, com experiência em Docker, Bootstrap e Tailwind.</p>
-            <div class="d-flex flex-wrap gap-2 hero-actions">
-              <a class="btn btn-primary d-flex align-items-center" href="#projetos"><i data-lucide="rocket" class="me-2"></i>Ver projetos</a>
-              <a class="btn btn-outline-light d-flex align-items-center" href="#contato"><i data-lucide="mail" class="me-2"></i>Entrar em contato</a>
+      <div class="offcanvas-body pt-0">
+        <!-- SELETOR DE IDIOMA -->
+        <div class="language-dropdown-mobile d-lg-none mb-3 ">
+          <div class="dropdown">
+            <button
+              class="btn btn-sm lang-btn w-100 d-inline-flex justify-content-between align-items-center"
+              id="langDropdownMobile"
+              data-bs-toggle="dropdown"
+              data-bs-display="static"
+              data-bs-auto-close="outside"
+              aria-expanded="false"
+              aria-label="Selecionar idioma"
+              data-i18n="a11y.languageSelector" data-i18n-attr="aria-label"
+            >
+              <span class="d-inline-flex align-items-center gap-2">
+                <span class="fi fi-br lang-flag"></span>
+                <span class="lang-label">PT</span>
+              </span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-dark p-2 shadow-lg language-menu w-100"
+            >
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center gap-2"
+                data-lang="pt"
+              >
+                <span class="fi fi-br"></span>PT
+              </button>
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center gap-2"
+                data-lang="en"
+              >
+                <span class="fi fi-gb"></span>EN
+              </button>
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center gap-2"
+                data-lang="es"
+              >
+                <span class="fi fi-es"></span>ES
+              </button>
+              <button
+                type="button"
+                class="dropdown-item d-flex align-items-center gap-2"
+                data-lang="ja"
+              >
+                <span class="fi fi-jp"></span>JP
+              </button>
             </div>
           </div>
-          <div class="col-12 col-lg-5 text-center">
-            <img class="avatar mb-2" src="./src/assets/img/profile-img.jpg" alt="Foto de perfil de Bryan" />
-            <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-              <span class="chip"><i data-lucide="code"></i> PHP</span>
-              <span class="chip"><i data-lucide="database"></i> MySQL</span>
-              <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
-              <span class="chip"><i data-lucide="boxes"></i> Docker</span>
+        </div>
+        <ul class="nav flex-column nav-mobile gap-1">
+          <li>
+            <a class="nav-link" href="#sobre" data-i18n="nav.sobre">Sobre</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#projetos" data-i18n="nav.projetos"
+              >Projetos</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#habilidades" data-i18n="nav.habilidades"
+              >Habilidades</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#formacao-experiencia"
+              data-i18n="nav.experiencia"
+              >Experiência</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#contato" data-i18n="nav.contato"
+              >Contato</a
+            >
+          </li>
+        </ul>
+        <div class="mt-3">
+          <a
+            class="btn btn-primary w-100 py-2"
+            href="#contato"
+            -i18n="cta.vamosConversar"
+            >Vamos conversar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+       HERO
+    ========================================================== -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-card p-4 p-md-5">
+          <div class="row align-items-center g-4 g-lg-5 reverse-on-mobile">
+            <div class="col-12 col-lg-7">
+              <span class="badge rounded-pill mb-3" data-i18n="hero.badge"
+                >Disponível para novos projetos</span
+              >
+              <h1 class="mb-3" data-i18n="hero.title">
+                Olá, sou <span class="text-gradient">Bryan Alvarenga</span>
+              </h1>
+              <p class="lead mb-4" data-i18n="hero.text">
+                Desenvolvedor web apaixonado por tecnologia e por transformar
+                ideias em sistemas funcionais. Focado em back-end com PHP, Java
+                e MySQL, com experiência em Docker, Bootstrap e Tailwind.
+              </p>
+              <div class="d-flex flex-wrap gap-2 hero-actions">
+                <a
+                  class="btn btn-primary d-flex align-items-center"
+                  href="#projetos"
+                  data-i18n="cta.verProjetos"
+                  ><i data-lucide="rocket" class="me-2"></i>Ver projetos</a
+                >
+                <a
+                  class="btn btn-outline-light d-flex align-items-center"
+                  href="#contato"
+                  data-i18n="cta.contato"
+                  ><i data-lucide="mail" class="me-2"></i>Entrar em contato</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-lg-5 text-center">
+              <img
+                class="avatar mb-2"
+                src="./src/assets/img/profile-img.jpg"
+                alt="Foto de perfil de Bryan"
+                data-i18n="hero.avatarAlt"
+                data-i18n-attr="alt"
+              />
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                <span class="chip"><i data-lucide="code"></i> PHP</span>
+                <span class="chip"><i data-lucide="database"></i> MySQL</span>
+                <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
+                <span class="chip"><i data-lucide="boxes"></i> Docker</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- =========================================================
+    <!-- =========================================================
        MAIN CONTENT
   ========================================================== -->
-  <main id="main">
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2 class="section-title">Sobre</h2>
-        <p class="section-sub">
-          Sou estudante de Engenharia de Software na Unifio e apaixonado por desenvolvimento de aplicações web.
-          Tenho uma base sólida em Java, PHP, Python, HTML, CSS e JavaScript, além de conhecimentos práticos em Tailwind CSS e Bootstrap. </br>
-          Atualmente, estou estudando frameworks como Spring Boot e Laravel, além de banco de dados MySQL.
-          Meu foco é evoluir constantemente através de projetos acadêmicos e pessoais, buscando me tornar um desenvolvedor capaz de criar soluções funcionais, bem estruturadas e de impacto.
-        </p>
-      </div>
-    </section>
+    <main id="main">
+      <!-- SOBRE -->
+      <section id="sobre" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.sobre">Sobre</h2>
+          <p class="section-sub" data-i18n="about.sub">
+            Sou estudante de Engenharia de Software na Unifio e apaixonado por
+            desenvolvimento de aplicações web. Tenho uma base sólida em Java,
+            PHP, Python, HTML, CSS e JavaScript, além de conhecimentos práticos
+            em Tailwind CSS e Bootstrap. <br />
+            Atualmente, estou estudando frameworks como Spring Boot e Laravel,
+            além de banco de dados MySQL. Meu foco é evoluir constantemente
+            através de projetos acadêmicos e pessoais, buscando me tornar um
+            desenvolvedor capaz de criar soluções funcionais, bem estruturadas e
+            de impacto.
+          </p>
+        </div>
+      </section>
 
-    <!-- PROJETOS -->
-    <section id="projetos" class="section">
-      <div class="container">
-        <h2 class="section-title">Projetos</h2>
-        <p class="section-sub">Alguns trabalhos recentes.</p>
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
-            <article class="project-card h-100 d-flex flex-column">
-              <div class="thumb">
-                <img src="./src/assets/img/sge-preview.webp" alt="Preview do Sistema de Gerenciamento de Atléticas" class="img-fluid rounded-top">
-              </div>
-              <div class="p-3 p-md-4 d-flex flex-column gap-2 flex-grow-1">
-                <h3 class="h5 m-0">SGE — Gerenciamento de Atléticas</h3>
-                <p class="m-0 text-secondary">PHP, MySQL, Docker, Bootstrap. Controle de eventos e agenda pública.</p>
-                <div class="mt-auto d-flex gap-2 pt-2">
-                  <a class="btn btn-sm btn-primary d-flex align-items-center" href="#"><i data-lucide="external-link" class="me-1"></i>Demo</a>
-                  <a class="btn btn-sm btn-outline-light d-flex align-items-center btn-code" href="https://github.com/rafaeldiasgarcia/sge" target="_blank"><i data-lucide="github" class="me-1"></i>Código</a>
+      <!-- PROJETOS -->
+      <section id="projetos" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.projetos">Projetos</h2>
+          <p class="section-sub" data-i18n="projects.sub">
+            Alguns trabalhos recentes.
+          </p>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="project-card h-100 d-flex flex-column">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/img/sge-preview.webp"
+                    alt="Preview do Sistema de Gerenciamento de Atléticas"
+                    class="img-fluid rounded-top"
+                    data-i18n="projects.sge.alt"
+                    data-i18n-attr="alt"
+                  />
                 </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section">
-      <div class="container">
-        <h2 class="section-title">Habilidades</h2>
-        <p class="section-sub">Tecnologias e ferramentas que uso no dia a dia.</p>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="chip"><i data-lucide="code"></i> PHP</span>
-          <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
-          <span class="chip"><i data-lucide="database"></i> MySQL</span>
-          <span class="chip"><i data-lucide="boxes"></i> Docker</span>
-          <span class="chip"><i data-lucide="git-branch"></i> Git/GitHub</span>
-          <span class="chip"><i data-lucide="layout"></i> Bootstrap</span>
-          <span class="chip"><i data-lucide="sparkles"></i> Tailwind</span>
-          <span class="chip"><i data-lucide="terminal"></i> Linux/CLI</span>
-          <span class="chip"><i data-lucide="braces"></i> Python</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMAÇÃO & EXPERIÊNCIA -->
-    <section id="formacao-experiencia" class="section">
-      <div class="container">
-        <h2 class="section-title">Experiência</h2>
-        <div class="row g-4">
-          <div class="col-12 col-lg-6">
-            <div class="fx-card reveal">
-              <h3 class="h5 mb-3">Formação</h3>
-              <ol class="timeline">
-                <li class="timeline-item">
-                  <div class="tl-head">
-                    <span class="tl-title">Engenharia de Software — UNIFIO</span>
-                    <small class="tl-time">2025 — 2028</small>
+                <div class="p-3 p-md-4 d-flex flex-column gap-2 flex-grow-1">
+                  <h3 class="h5 m-0" data-i18n="projects.sge.title">
+                    SGE — Gerenciamento de Atléticas
+                  </h3>
+                  <p class="m-0 text-secondary" data-i18n="projects.sge.desc">
+                    PHP, MySQL, Docker, Bootstrap. Controle de eventos e agenda
+                    pública.
+                  </p>
+                  <div class="mt-auto d-flex gap-2 pt-2">
+                    <a
+                      class="btn btn-sm btn-primary d-flex align-items-center"
+                      href="#"
+                      data-i18n="projects.sge.demo"
+                      ><i data-lucide="external-link" class="me-1"></i>Demo</a
+                    >
+                    <a
+                      class="btn btn-sm btn-outline-light d-flex align-items-center btn-code"
+                      href="https://github.com/rafaeldiasgarcia/sge"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-i18n="projects.sge.code"
+                      ><i data-lucide="github" class="me-1"></i>Código</a
+                    >
                   </div>
-                  <p class="m-0 tl-desc">Formação voltada ao desenvolvimento e gestão de sistemas, com base em lógica, programação, engenharia de requisitos, modelagem, bancos de dados, testes e metodologias ágeis. Ênfase em projetos práticos e boas práticas de desenvolvimento</p>
-                </li>
-              </ol>
-              <h4 class="h6 mt-4 mb-2">Cursos Complementares</h4>
-              <ul class="small mb-0">
-                <li>Cisco — JavaScript Essentials 1</li>
-                <li>Alura — Formação: HTML e CSS para projetos web</li>
-                <li>Alura — Formação: Java com Orientação a Objetos</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="fx-card reveal">
-              <h3 class="h5 mb-3">Experiência</h3>
-              <ol class="timeline">
-                <li class="timeline-item">
-                  <div class="tl-head">
-                    <span class="tl-title">SGE — Sistema de Gerenciamento de Eventos UNIFIO</span>
-                    <small class="tl-time">2025 • Projeto em implantação</small>
-                  </div>
-                  <p class="m-0 tl-desc">Desenvolvimento full stack de um sistema acadêmico real para gerenciamento de eventos da UNIFIO.</p>
-                  <ul class="small mt-2">
-                    <li>Stack: PHP 8.2, MySQL, Docker, Bootstrap, MVC</li>
-                    <li>Versionamento via GitHub com branches e PRs</li>
-                    <li>PHPMailer e controle de permissões</li>
-                    <li>Reuniões de requisitos e documentação técnica</li>
-                  </ul>
-                </li>
-              </ol>
+                </div>
+              </article>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTATO -->
-    <section id="contato" class="section">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-        <p class="section-sub">Conte um pouco sobre sua necessidade. Eu retorno em breve.</p>
-        <div class="row g-4">
-          <div class="col-12 col-lg-7">
-            <form class="needs-validation" novalidate action="https://formspree.io/f/manppgoy" method="POST">
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <label for="name" class="form-label">Nome</label>
-                  <input id="name" name="name" type="text" class="form-control" placeholder="Seu nome" required>
-                  <div class="invalid-feedback">Informe seu nome.</div>
-                </div>
-                <div class="col-md-6">
-                  <label for="email" class="form-label">E-mail</label>
-                  <input id="email" name="email" type="email" class="form-control" placeholder="seu@email.com" required>
-                  <div class="invalid-feedback">Informe um e-mail válido.</div>
-                </div>
-                <div class="col-12">
-                  <label for="message" class="form-label">Mensagem</label>
-                  <textarea id="message" name="message" class="form-control" rows="5" placeholder="Como posso ajudar?" required></textarea>
-                  <div class="invalid-feedback">Escreva uma mensagem.</div>
-                </div>
-                <div class="col-12 d-flex align-items-center gap-3">
-                  <button class="btn btn-primary d-flex align-items-center" type="submit"><i data-lucide="send" class="me-2"></i>Enviar</button>
-                  <small class="text-secondary">Resposta em até 24h úteis.</small>
-                </div>
+      <!-- HABILIDADES -->
+      <section id="habilidades" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.habilidades">
+            Habilidades
+          </h2>
+          <p class="section-sub" data-i18n="skills.sub">
+            Tecnologias e ferramentas que uso no dia a dia.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="chip"><i data-lucide="code"></i> PHP</span>
+            <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
+            <span class="chip"><i data-lucide="database"></i> MySQL</span>
+            <span class="chip"><i data-lucide="boxes"></i> Docker</span>
+            <span class="chip"
+              ><i data-lucide="git-branch"></i> Git/GitHub</span
+            >
+            <span class="chip"><i data-lucide="layout"></i> Bootstrap</span>
+            <span class="chip"><i data-lucide="sparkles"></i> Tailwind</span>
+            <span class="chip"><i data-lucide="terminal"></i> Linux/CLI</span>
+            <span class="chip"><i data-lucide="braces"></i> Python</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO & EXPERIÊNCIA -->
+      <section id="formacao-experiencia" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.experiencia">
+            Experiência
+          </h2>
+          <div class="row g-4">
+            <div class="col-12 col-lg-6">
+              <div class="fx-card reveal">
+                <h3 class="h5 mb-3" data-i18n="experience.education.title">
+                  Formação
+                </h3>
+                <ol class="timeline">
+                  <li class="timeline-item">
+                    <div class="tl-head">
+                      <span
+                        class="tl-title"
+                        data-i18n="experience.education.course"
+                        >Engenharia de Software — UNIFIO</span
+                      >
+                      <small
+                        class="tl-time"
+                        data-i18n="experience.education.time"
+                        >2025 — 2028</small
+                      >
+                    </div>
+                    <p
+                      class="m-0 tl-desc"
+                      data-i18n="experience.education.desc"
+                    >
+                      Formação voltada ao desenvolvimento e gestão de sistemas,
+                      com base em lógica, programação, engenharia de requisitos,
+                      modelagem, bancos de dados, testes e metodologias ágeis.
+                      Ênfase em projetos práticos e boas práticas de
+                      desenvolvimento
+                    </p>
+                  </li>
+                </ol>
+                <h4
+                  class="h6 mt-4 mb-2"
+                  data-i18n="experience.education.coursesTitle"
+                >
+                  Cursos Complementares
+                </h4>
+                <ul class="small mb-0">
+                  <li data-i18n="experience.education.courses.0">
+                    Cisco — JavaScript Essentials 1
+                  </li>
+                  <li data-i18n="experience.education.courses.1">
+                    Alura — Formação: HTML e CSS para projetos web
+                  </li>
+                  <li data-i18n="experience.education.courses.2">
+                    Alura — Formação: Java com Orientação a Objetos
+                  </li>
+                </ul>
               </div>
-            </form>
-          </div>
-          <div class="col-12 col-lg-5">
-            <div class="p-4 rounded-4" style="background:var(--surface-1); border:1px solid rgba(255,255,255,.08)">
-              <h3 class="h5">Outros canais</h3>
-              <ul class="list-unstyled mt-3 d-grid gap-2">
-                <li><i data-lucide="mail"></i> <a href="mailto:bryanalvarenga@outlook.com.br">bryanalvarenga@outlook.com.br</a></li>
-                <li><i data-lucide="github"></i> <a href="#" target="_blank">github.com/bryancalvarenga</a></li>
-                <li><i data-lucide="linkedin"></i> <a href="#" target="_blank">linkedin.com/in/bryanalvarenga</a></li>
-              </ul>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="fx-card reveal">
+                <h3 class="h5 mb-3" data-i18n="experience.jobs.title">
+                  Experiência
+                </h3>
+                <ol class="timeline">
+                  <li class="timeline-item">
+                    <div class="tl-head">
+                      <span
+                        class="tl-title"
+                        data-i18n="experience.jobs.sge.title"
+                        >SGE — Sistema de Gerenciamento de Eventos UNIFIO</span
+                      >
+                      <small
+                        class="tl-time"
+                        data-i18n="experience.jobs.sge.time"
+                        >2025 • Projeto em implantação</small
+                      >
+                    </div>
+                    <p class="m-0 tl-desc" data-i18n="experience.jobs.sge.desc">
+                      Desenvolvimento full stack de um sistema acadêmico real
+                      para gerenciamento de eventos da UNIFIO.
+                    </p>
+                    <ul class="small mt-2">
+                      <li data-i18n="experience.jobs.sge.items.0">
+                        Stack: PHP 8.2, MySQL, Docker, Bootstrap, MVC
+                      </li>
+                      <li data-i18n="experience.jobs.sge.items.1">
+                        Versionamento via GitHub com branches e PRs
+                      </li>
+                      <li data-i18n="experience.jobs.sge.items.2">
+                        PHPMailer e controle de permissões
+                      </li>
+                      <li data-i18n="experience.jobs.sge.items.3">
+                        Reuniões de requisitos e documentação técnica
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <!-- =========================================================
+      <!-- CONTATO -->
+      <section id="contato" class="section">
+        <div class="container">
+          <h2 class="section-title" data-i18n="sections.contato">Contato</h2>
+          <p class="section-sub" data-i18n="contact.sub">
+            Conte um pouco sobre sua necessidade. Eu retorno em breve.
+          </p>
+          <div class="row g-4">
+            <div class="col-12 col-lg-7">
+              <form class="needs-validation" novalidate action="https://formspree.io/f/manppgoy" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label" data-i18n="form.nomeLabel">Nome</label>
+                    <input id="name" name="name" type="text" class="form-control" required />
+                    <div class="invalid-feedback" data-i18n="form.nomeInvalid">Informe seu nome.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label" data-i18n="form.emailLabel">E-mail</label>
+                    <input id="email" name="email" type="email" class="form-control" required />
+                    <div class="invalid-feedback" data-i18n="form.emailInvalid">Informe um e-mail válido.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label" data-i18n="form.mensagemLabel">Mensagem</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    <div class="invalid-feedback" data-i18n="form.mensagemInvalid">Escreva uma mensagem.</div>
+                  </div>
+
+                  <div class="col-12 d-flex align-items-center gap-3">
+                    <button class="btn btn-primary d-flex align-items-center" type="submit" data-i18n="form.enviar">
+                      <i data-lucide="send" class="me-2"></i>Enviar
+                    </button>
+                    <small class="text-secondary" data-i18n="contact.sla">Resposta em até 24h úteis.</small>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-5">
+              <div class="p-4 rounded-4" style="background: var(--surface-1); border: 1px solid rgba(255, 255, 255, 0.08);">
+                <h3 class="h5" data-i18n="contact.channelsTitle">Outros canais</h3>
+                <ul class="list-unstyled mt-3 d-grid gap-2">
+                  <li>
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:bryanalvarenga@outlook.com.br">bryanalvarenga@outlook.com.br</a>
+                  </li>
+                  <li>
+                    <i data-lucide="github"></i>
+                    <a href="https://github.com/bryancalvarenga" target="_blank" rel="noopener noreferrer">github.com/bryancalvarenga</a>
+                  </li>
+                  <li>
+                    <i data-lucide="linkedin"></i>
+                    <a href="https://linkedin.com/in/bryanalvarenga" target="_blank" rel="noopener noreferrer">linkedin.com/in/bryanalvarenga</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
        FOOTER
   ========================================================== -->
-  <footer class="py-4">
-    <div class="container d-flex flex-column flex-md-row
-              justify-content-center justify-content-md-between
-              align-items-center text-center gap-2 gap-md-3">
-      <small>&copy; <span id="year"></span> Bryan Alvarenga. Todos os direitos reservados.</small>
-      <small>Construído com Bootstrap + um toque de roxo</small>
-    </div>
-  </footer>
+    <footer class="py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center text-center gap-2 gap-md-3"
+      >
+        <small data-i18n="footer.rights"
+          >&copy; <span id="year"></span> Bryan Alvarenga. Todos os direitos
+          reservados.</small
+        >
+        <small data-i18n="footer.copy"
+          >Construído com Bootstrap + um toque de roxo</small
+        >
+      </div>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.js" defer></script>
-  <script type="module" src="./src/js/app.js" defer></script>
-</body>
+    <!-- =========================================================
+       SCRIPTS
+  ========================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./src/js/lang.js"></script>
+    <script src="./src/js/lang-switcher.js"></script>
+    <script src="./src/js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.js"
+      defer
+    ></script>
+  </body>
 </html>
