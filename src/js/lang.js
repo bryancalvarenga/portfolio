@@ -390,6 +390,7 @@
   };
 
   function get(obj, path) {
+    if (!path || typeof path !== "string") return undefined; // guarda
     return path
       .split(".")
       .reduce((acc, k) => (acc && acc[k] != null ? acc[k] : undefined), obj);
@@ -398,41 +399,35 @@
   window.applyLanguage = function applyLanguage(lang) {
     const dict = translations[lang] || translations.pt;
 
-    document.querySelectorAll("[data-i18n]").forEach((el) => {
-      const key = el.getAttribute("data-i18n");
-      const value = get(dict, key);
-      if (typeof value === "string") el.textContent = value;
-      if (key === "footer.rights" && typeof value === "string") {
-        el.textContent = value.replace("{year}", new Date().getFullYear());
-      }
-    });
-
     document
-      .querySelectorAll(
-        "[data-i18n]:not([data-i18n-attr]):not(input):not(textarea):not(select)"
-      )
+      .querySelectorAll("[data-i18n]:not(input):not(textarea):not(select)")
       .forEach((el) => {
-        const key = el.getAttribute("data-i18n");
+        const key = el.getAttribute("data-i18n")?.trim();
+        if (!key) return;
         const value = get(dict, key);
         if (typeof value !== "string") return;
-
-        // Suporte a placeholder {year} no footer.rights
         el.textContent =
           key === "footer.rights"
             ? value.replace("{year}", new Date().getFullYear())
             : value;
       });
 
-    document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
-      const key = el.getAttribute("data-i18n");
-      const attrs =
-        el
-          .getAttribute("data-i18n-attr")
-          ?.split(",")
-          .map((a) => a.trim()) || [];
+    document.querySelectorAll("[data-i18n][data-i18n-attr]").forEach((el) => {
+      const key = el.getAttribute("data-i18n")?.trim();
+      if (!key) return;
       const value = get(dict, key);
       if (typeof value !== "string") return;
-      attrs.forEach((attr) => el.setAttribute(attr, value));
+
+      const attrs = (el.getAttribute("data-i18n-attr") || "")
+        .split(",")
+        .map((a) => a.trim())
+        .filter(Boolean);
+
+      attrs.forEach((attr) => el.setAttribute(attr,
+        key === "footer.rights"
+          ? value.replace("{year}", new Date().getFullYear())
+          : value
+      ));
     });
   };
 })();
