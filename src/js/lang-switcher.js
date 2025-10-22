@@ -6,6 +6,8 @@
     ja: 'fi-jp',
   };
 
+  const STORAGE_KEY = 'app:lang';
+
   const btns = [
     document.getElementById('langDropdownDesktop'),
     document.getElementById('langDropdownMobile'),
@@ -24,10 +26,17 @@
   function setLang(lang) {
     const allowed = Object.keys(flagByLang);
     const safe = allowed.includes(lang) ? lang : 'pt';
-    localStorage.setItem('lang', safe);
+
+    localStorage.setItem(STORAGE_KEY, safe);
+
     updateButtonUI(safe);
-    if (typeof window.applyLanguage === 'function') {
+
+    if (typeof window.setAppLanguage === 'function') {
+      window.setAppLanguage(safe); 
+    } else if (typeof window.applyLanguage === 'function') {
+      document.documentElement.lang = safe;
       window.applyLanguage(safe);
+      document.dispatchEvent(new Event('app:languagechange'));
     }
   }
 
@@ -35,9 +44,7 @@
   const dropdownBtn = document.getElementById('langDropdownMobile');
   if (offcanvasEl && dropdownBtn) {
     let lockOffcanvas = false;
-
     dropdownBtn.addEventListener('click', (e) => e.stopPropagation());
-
     dropdownBtn.addEventListener('show.bs.dropdown', () => { lockOffcanvas = true; });
     dropdownBtn.addEventListener('hide.bs.dropdown', () => { lockOffcanvas = false; });
     offcanvasEl.addEventListener('hide.bs.offcanvas', (e) => {
@@ -60,5 +67,6 @@
     }
   }, true);
 
-  setLang(localStorage.getItem('lang') || 'pt');
+  const saved = localStorage.getItem(STORAGE_KEY) || document.documentElement.lang || 'pt';
+  setLang(saved);
 })();

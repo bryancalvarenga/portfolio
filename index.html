@@ -372,15 +372,25 @@
                     pública.
                   </p>
                   <div class="mt-auto d-flex gap-2 pt-2">
-                    <a class="btn btn-sm btn-primary d-flex align-items-center" href="#">
+
+                    <button
+                      class="btn btn-sm btn-primary d-flex align-items-center js-open-project"
+                      data-project="sge"
+                    >
                       <i data-lucide="external-link" class="me-1"></i>
-                      <span data-i18n="projects.sge.demo">Demo</span>
-                    </a>
-                    <a class="btn btn-sm btn-outline-light d-flex align-items-center btn-code"
-                      href="https://github.com/rafaeldiasgarcia/sge" target="_blank" rel="noopener noreferrer">
+                      <span data-i18n="projects.sge.view">Ver projeto</span>
+                    </button>
+
+                    <a
+                      class="btn btn-sm btn-outline-light d-flex align-items-center btn-code"
+                      href="https://github.com/rafaeldiasgarcia/sge"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <i data-lucide="github" class="me-1"></i>
                       <span data-i18n="projects.sge.code">Código</span>
                     </a>
+  
                   </div>
                 </div>
               </article>
@@ -581,7 +591,7 @@
       </section>
     </main>
 
-    <!-- =========================================================
+  <!-- =========================================================
        FOOTER
   ========================================================== -->
     <footer class="py-4">
@@ -598,15 +608,96 @@
       </div>
     </footer>
 
-    <!-- =========================================================
+  <!-- =========================================================
        SCRIPTS
   ========================================================== -->
+    <script>
+      (function () {
+        const saved = localStorage.getItem('app:lang') || 'pt';
+        const primary = saved.toLowerCase().split('-')[0];
+        const alias = { jp: 'ja' };
+        document.documentElement.lang = alias[saved] || alias[primary] || primary || 'pt';
+      })();
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./src/js/lang.js"></script>
-    <script src="./src/js/lang-switcher.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide-icons-extra.min.js"></script>
-    <script src="./src/js/app.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script defer src="./src/js/lang.js"></script>
+    <script defer src="./src/js/lang-switcher.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide-icons-extra.min.js"></script>
+
+    <script defer src="./src/js/app.js"></script>
+    <script defer src="./src/js/projects.js"></script>
+    <script defer src="./src/js/project-modal.js"></script>
+
+
+    <!-- =======================================================
+        PROJECT MODAL
+    ========================================================= -->
+
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true" aria-labelledby="projectModalLabel">
+      <div class="modal-dialog modal-dialog-centered modal-delicate">
+        <div class="modal-content pm-content">
+          <div class="modal-header pm-header">
+            <h2 class="modal-title h5 fw-semibold m-0" id="projectModalLabel">Título do projeto</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+
+          <div class="modal-body pm-body">
+            <figure class="pm-figure">
+              <img id="pm-cover" class="pm-cover" src="" alt="" loading="lazy">
+              <figcaption class="pm-caption" id="pm-caption"></figcaption>
+            </figure>
+
+            <div class="row g-3 align-items-start">
+              <div class="col-12 col-lg-8">
+                <section class="pm-section">
+                  <h3 class="pm-section-title" id="pm-title-contexto">Contexto</h3>
+                  <p id="pm-contexto" class="m-0"></p>
+                </section>
+
+                <section class="pm-section">
+                  <h3 class="pm-section-title" id="pm-title-desafios">Principais desafios</h3>
+                  <ul id="pm-desafios" class="pm-list"></ul>
+                </section>
+
+                <section class="pm-section">
+                  <h3 class="pm-section-title" id="pm-title-aprendizados">Aprendizados</h3>
+                  <ul id="pm-aprendizados" class="pm-list"></ul>
+                </section>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <section class="pm-section">
+                  <h3 class="pm-aside-title" id="pm-title-tech">Tecnologias</h3>
+                  <div id="pm-tech" class="pm-chips"></div>
+                </section>
+
+                <section class="d-grid gap-2">
+                  <a id="pm-demo" class="btn btn-primary btn-with-icon d-flex justify-content-center align-items-center" target="_blank" rel="noreferrer">
+                    <i data-lucide="external-link"></i>
+                    <span id="pm-demo-label">Abrir demo</span>
+                  </a>
+                  <a id="pm-repo" class="btn btn-outline-light btn-with-icon d-flex justify-content-center align-items-center" target="_blank" rel="noreferrer">
+                    <i data-lucide="github"></i>
+                    <span id="pm-repo-label">Ver repositório</span>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer pm-footer">
+            <small class="me-auto text-muted" id="pm-esc-hint">ESC fecha</small>
+            <button type="button" class="btn btn-outline-light" id="pm-close-btn" data-bs-dismiss="modal">
+              <span id="pm-close-label">Fechar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

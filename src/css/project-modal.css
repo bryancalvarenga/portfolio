@@ -1,0 +1,153 @@
+.modal-delicate{ --bs-modal-width: 800px; }
+@media (max-width: 992px){ .modal-delicate{ --bs-modal-width: 94vw; } }
+
+.pm-content{
+
+  --pm-bg: var(--surface-1, #141428);
+  --pm-text: var(--text-color, #b9b9c9);
+  --pm-title: var(--title-color, #ffffff);
+  --pm-muted: var(--muted-color, #8a8aa0);
+  --pm-border: rgba(255,255,255,.06);
+  --pm-primary: var(--primary-color, #8257e6);
+  --pm-primary-600: var(--primary-600, #6f47cf);
+
+  background: var(--pm-bg);
+  color: var(--pm-text);
+  border: 1px solid var(--pm-border);
+  border-radius: var(--radius-2xl, 1.25rem);
+  box-shadow: var(--shadow-soft, 0 10px 30px rgba(0,0,0,.35));
+  overflow: hidden;
+  font-family: var(--text-font, 'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif);
+}
+
+.pm-header{ padding: 10px 14px; border-bottom: 1px solid var(--pm-border); }
+.pm-footer{ padding: 10px 14px; border-top: 1px solid var(--pm-border); }
+
+.pm-body{ padding: 12px; }
+@media (min-width: 992px){ .pm-body{ padding: 14px; } }
+
+.pm-content h2,
+.pm-section-title,
+.pm-aside-title{ font-family: var(--title-font, 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif); }
+
+.pm-section{ margin-bottom: 10px; }
+
+.pm-section-title{
+  font-size: .9rem;
+  color: var(--pm-title);
+  margin: 0 0 4px;
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+
+.pm-aside-title{
+  font-size: .78rem;
+  color: var(--pm-muted);
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin: 0 0 8px;
+}
+
+.pm-content p,
+.pm-content li{
+  font-size: .9rem;           
+  line-height: 1.4;
+  color: var(--pm-text);
+}
+
+.pm-figure{ margin: 0 0 10px; }
+.pm-cover{
+  width: 100%;
+  height: clamp(120px, 24vh, 200px);
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+.pm-caption{ margin-top: 4px; color: var(--pm-muted); font-size: .82rem; }
+
+.pm-list{
+  margin: 0;
+  padding-left: 18px;       
+  list-style-position: outside;
+}
+.pm-list > li{ margin: 2px 0; }
+
+@media (min-width: 992px){
+  .pm-list{
+    padding-left: 0;          
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 6px;
+  }
+  .pm-list > li{
+    position: relative;
+    padding-left: 16px;    
+    break-inside: avoid;
+  }
+  .pm-list > li::before{
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+    color: var(--pm-primary, #8257e6);
+  }
+}
+
+.pm-chips{ display: flex; flex-wrap: wrap; gap: 8px; }
+.pm-chips .badge{
+  background: color-mix(in oklab, var(--pm-primary) 18%, transparent);
+  color: color-mix(in oklab, var(--pm-primary) 85%, white 15%);
+  border: 1px solid color-mix(in oklab, var(--pm-primary) 35%, transparent);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.pm-content .btn{ border-radius: 10px; font-weight: 600; }
+.pm-content .btn-primary{
+  background: var(--pm-primary);
+  border-color: var(--pm-primary);
+}
+.pm-content .btn-primary:hover{
+  background: var(--pm-primary-600);
+  border-color: var(--pm-primary-600);
+}
+.pm-content .btn-outline-light{
+  border-color: rgba(255,255,255,.16);
+  color: var(--pm-text);
+}
+.pm-content .btn-outline-light:hover{ background: rgba(255,255,255,.06); }
+.btn-with-icon{ display: inline-flex; align-items: center; gap: 8px; }
+.btn-with-icon i{ width: 18px; height: 18px; }
+
+.pm-content small, .text-muted{ color: var(--pm-muted) !important; }
+
+.modal-backdrop.show{ opacity: .45; }
+.modal-backdrop{ backdrop-filter: blur(2px); }
+
+.modal.fade .modal-dialog{
+  transform: translate3d(0, 6px, 0);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.modal.show .modal-dialog{ transform: translate3d(0, 0, 0); }
+
+#projectModal .modal-dialog{ max-height: 88dvh; }
+#projectModal .modal-content{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-height: 88dvh;
+}
+#projectModal .pm-body{
+  overflow: auto;                 
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--pm-primary) rgba(255,255,255,.06);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .modal.fade .modal-dialog,
+  .modal.show .modal-dialog{ transition: none; }
+}

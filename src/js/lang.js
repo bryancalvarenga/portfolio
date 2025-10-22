@@ -1,3 +1,4 @@
+
 (function () {
   const translations = {
     pt: {
@@ -44,7 +45,38 @@
           alt: "Preview do Sistema de Gerenciamento de Atléticas",
           demo: "Demo",
           code: "Código",
-        },
+          view: "Ver projeto",
+          modal: {
+            title: "SGE — Gerenciamento de Atléticas",
+            coverAlt: "Tela do SGE com agenda pública e cadastro de eventos",
+            coverCaption: "Preview do sistema em ambiente de desenvolvimento.",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Principais desafios",
+              aprendizados: "Aprendizados",
+              tecnologias: "Tecnologias",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositório"
+            },
+            content: {
+              contexto: "O SGE (Sistema de Gerenciamento de Eventos) é uma aplicação web desenvolvida para o Centro Universitário UNIFIO com o objetivo de modernizar e centralizar a gestão de eventos esportivos e acadêmicos na quadra poliesportiva da instituição. O projeto foi construído em equipe, com versionamento no GitHub utilizando branches, pull requests e revisões de código. Também realizamos um levantamento de requisitos e uma entrevista real com a coordenação da faculdade para alinhar as necessidades do sistema.",
+              desafios: [
+                "Implementar autenticação segura com verificação em duas etapas (2FA).",
+                "Gerenciar múltiplos níveis de acesso (usuário, administrador e superadmin).",
+                "Construir uma agenda pública dinâmica sem exigir login.",
+                "Manter comunicação assíncrona entre front-end e back-end via Fetch API e AJAX.",
+                "Organizar o projeto em arquitetura MVC e integrar PDO, PHPMailer e Composer."
+              ],
+              aprendizados: [
+                "Trabalho colaborativo com GitHub (branches, commits, PRs e code review).",
+                "Experiência real de levantamento de requisitos e comunicação com cliente institucional.",
+                "Criação de componentes PHP modulares seguindo boas práticas de MVC.",
+                "Integração segura entre front-end (Fetch API/AJAX) e back-end PHP.",
+                "Uso de Docker para ambiente padronizado e fácil deploy."
+              ]
+            }
+          }
+        }
       },
       skills: {
         sub: "Tecnologias e ferramentas que uso no dia a dia.",
@@ -95,6 +127,7 @@
         rights: "© {year} Bryan Alvarenga. Todos os direitos reservados.",
         copy: "Construído com Bootstrap + um toque de roxo",
       },
+      ui: { close: "Fechar", escCloses: "ESC fecha" },
     },
 
     en: {
@@ -141,7 +174,38 @@
           alt: "Preview of the Athletics Management System",
           demo: "Demo",
           code: "Code",
-        },
+          view: "View project",
+          modal: {
+            title: "SGE — Athletics Management",
+            coverAlt: "SGA screen with public calendar and event creation",
+            coverCaption: "System preview in development environment.",
+            sections: {
+              contexto: "Context",
+              desafios: "Key challenges",
+              aprendizados: "Key learnings",
+              tecnologias: "Technologies",
+              demoBtn: "Open demo",
+              repoBtn: "View repository"
+            },
+            content: {
+              contexto: "The SGE (Event Management System) is a web application developed for UNIFIO University to modernize and centralize the management of sports and academic events held at the institution's gymnasium. The project was built collaboratively using GitHub version control (branches, pull requests, and code reviews). We also conducted a real requirement-gathering interview with the university coordination to understand their needs.",
+              desafios: [
+                "Implement secure authentication with two-factor verification (2FA).",
+                "Handle multiple access levels (user, admin, and superadmin).",
+                "Build a public calendar view without requiring login.",
+                "Maintain asynchronous communication between front-end and back-end using Fetch API and AJAX.",
+                "Structure the project under an MVC architecture and integrate PDO, PHPMailer, and Composer."
+              ],
+              aprendizados: [
+                "Collaborative development using GitHub branches, commits, PRs, and reviews.",
+                "Real experience conducting requirement analysis with institutional clients.",
+                "Creation of modular PHP components following MVC best practices.",
+                "Secure integration between front-end (Fetch API/AJAX) and PHP back-end.",
+                "Containerized setup using Docker for consistent and reproducible environments."
+              ]
+            }
+          }
+        }
       },
       skills: {
         sub: "Technologies and tools I use day to day.",
@@ -192,6 +256,7 @@
         rights: "© {year} Bryan Alvarenga. All rights reserved.",
         copy: "Built with Bootstrap + a touch of purple",
       },
+      ui: { close: "Close", escCloses: "ESC closes" },
     },
 
     es: {
@@ -238,7 +303,38 @@
           alt: "Vista previa del Sistema de Gestión de Atléticas",
           demo: "Demo",
           code: "Código",
-        },
+          view: "Ver proyecto",
+          modal: {
+            title: "SGE — Gestión de Atléticas",
+            coverAlt: "Pantalla del SGA con calendario público y creación de eventos",
+            coverCaption: "Vista previa del sistema en entorno de desarrollo.",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Desafíos clave",
+              aprendizados: "Aprendizajes",
+              tecnologias: "Tecnologías",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositorio"
+            },
+            content: {
+              contexto: "El SGE (Sistema de Gestión de Eventos) es una aplicación web desarrollada para el Centro Universitario UNIFIO con el objetivo de modernizar y centralizar la administración de eventos deportivos y académicos realizados en el gimnasio de la institución. El proyecto fue construido en equipo utilizando control de versiones en GitHub (ramas, pull requests y revisiones de código). Además, realizamos un levantamiento de requisitos y una entrevista real con la coordinación universitaria para comprender las necesidades del sistema.",
+              desafios: [
+                "Implementar autenticación segura con verificación en dos pasos (2FA).",
+                "Gestionar múltiples niveles de acceso (usuario, administrador y superadministrador).",
+                "Construir un calendario público dinámico sin requerir inicio de sesión.",
+                "Mantener comunicación asíncrona entre el front-end y el back-end mediante Fetch API y AJAX.",
+                "Organizar el proyecto con una arquitectura MVC e integrar PDO, PHPMailer y Composer."
+              ],
+              aprendizados: [
+                "Trabajo colaborativo con GitHub (ramas, commits, PRs y revisión de código).",
+                "Experiencia real en levantamiento de requisitos y comunicación con un cliente institucional.",
+                "Creación de componentes PHP modulares siguiendo buenas prácticas de MVC.",
+                "Integración segura entre el front-end (Fetch API/AJAX) y el back-end en PHP.",
+                "Uso de Docker para crear un entorno estandarizado y facilitar el despliegue."
+              ]
+            }
+          }
+        }
       },
       skills: {
         sub: "Tecnologías y herramientas que uso a diario.",
@@ -289,6 +385,7 @@
         rights: "© {year} Bryan Alvarenga. Todos los derechos reservados.",
         copy: "Construido con Bootstrap + un toque de púrpura",
       },
+       ui: { close: "Cerrar", escCloses: "ESC cierra" },
     },
 
     ja: {
@@ -335,7 +432,38 @@
           alt: "アスレチック管理システムのプレビュー",
           demo: "デモ",
           code: "コード",
-        },
+          view: "作品を見る",
+          modal: {
+            title: "SGE — アスレチック管理",
+            coverAlt: "公開カレンダーとイベント作成画面",
+            coverCaption: "開発環境でのシステムプレビュー。",
+            sections: {
+              contexto: "コンテキスト",
+              desafios: "主な課題",
+              aprendizados: "学び",
+              tecnologias: "技術",
+              demoBtn: "デモを開く",
+              repoBtn: "リポジトリを見る"
+            },
+            content: {
+              contexto: "SGE（イベント管理システム）は、UNIFIO大学の体育館で行われるスポーツおよび学術イベントの管理を近代化・一元化するために開発されたWebアプリケーションです。本プロジェクトはチーム開発として実施され、GitHub上でブランチ運用・プルリクエスト・コードレビューを用いて共同作業を行いました。また、大学のコーディネーターとの実際のヒアリングを通じて、システム要件を明確化しました。",
+              desafios: [
+                "2段階認証（2FA）による安全なログイン認証の実装。",
+                "ユーザー、管理者、スーパー管理者という複数レベルのアクセス制御。",
+                "ログイン不要で閲覧できる公開カレンダーの構築。",
+                "Fetch APIおよびAJAXを用いたフロントエンドとバックエンド間の非同期通信の維持。",
+                "MVCアーキテクチャに基づくプロジェクト構成とPDO・PHPMailer・Composerの統合。"
+              ],
+              aprendizados: [
+                "GitHubでの共同開発（ブランチ、コミット、PR、コードレビュー）。",
+                "大学の実案件を想定した要件定義とクライアントコミュニケーションの経験。",
+                "MVCのベストプラクティスに沿ったモジュール化PHPコンポーネントの作成。",
+                "Fetch API/AJAXを用いたフロントエンドとPHPバックエンドの安全な統合。",
+                "Dockerを活用した統一的な開発環境と容易なデプロイ実現。"
+              ]
+            }
+          }
+        }
       },
       skills: {
         sub: "日常的に使用している技術とツール。",
@@ -386,48 +514,55 @@
         rights: "© {year} Bryan Alvarenga. 無断複写・転載を禁じます。",
         copy: "Bootstrap と少しのパープルで構築",
       },
+      ui: { close: "閉じる", escCloses: "ESCで閉じる" },
     },
   };
 
   function get(obj, path) {
-    if (!path || typeof path !== "string") return undefined; // guarda
-    return path
-      .split(".")
+    if (!path || typeof path !== "string") return undefined;
+    return path.split(".")
       .reduce((acc, k) => (acc && acc[k] != null ? acc[k] : undefined), obj);
   }
+
+  window.translations = translations;
+  window.get = get;
+
+  window.setAppLanguage = function setAppLanguage(lang) {
+    document.documentElement.setAttribute('lang', lang);
+    applyLanguage(lang);
+    document.dispatchEvent(new Event('app:languagechange'));
+  };
 
   window.applyLanguage = function applyLanguage(lang) {
     const dict = translations[lang] || translations.pt;
 
-    document
-      .querySelectorAll("[data-i18n]:not(input):not(textarea):not(select)")
-      .forEach((el) => {
-        const key = el.getAttribute("data-i18n")?.trim();
-        if (!key) return;
-        const value = get(dict, key);
-        if (typeof value !== "string") return;
-        el.textContent =
-          key === "footer.rights"
-            ? value.replace("{year}", new Date().getFullYear())
-            : value;
-      });
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
+      const value = get(dict, key);
+      if (typeof value === "string") el.textContent = value;
+      if (key === "footer.rights" && typeof value === "string") {
+        el.textContent = value.replace("{year}", new Date().getFullYear());
+      }
+    });
 
-    document.querySelectorAll("[data-i18n][data-i18n-attr]").forEach((el) => {
-      const key = el.getAttribute("data-i18n")?.trim();
-      if (!key) return;
+    document.querySelectorAll(
+      "[data-i18n]:not([data-i18n-attr]):not(input):not(textarea):not(select)"
+    ).forEach((el) => {
+      const key = el.getAttribute("data-i18n");
       const value = get(dict, key);
       if (typeof value !== "string") return;
+      el.textContent = key === "footer.rights"
+        ? value.replace("{year}", new Date().getFullYear())
+        : value;
+    });
 
+    document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
+      const key = el.getAttribute("data-i18n");
       const attrs = (el.getAttribute("data-i18n-attr") || "")
-        .split(",")
-        .map((a) => a.trim())
-        .filter(Boolean);
-
-      attrs.forEach((attr) => el.setAttribute(attr,
-        key === "footer.rights"
-          ? value.replace("{year}", new Date().getFullYear())
-          : value
-      ));
+        .split(",").map((a) => a.trim()).filter(Boolean);
+      const value = get(dict, key);
+      if (typeof value !== "string") return;
+      attrs.forEach((attr) => el.setAttribute(attr, value));
     });
   };
 })();
