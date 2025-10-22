@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const dropdownBtn = document.getElementById('langDropdownMobile');
   if (!offcanvasEl || !dropdownBtn) return;
 
-  // Bloqueia o clique “subir” para o backdrop (sem capturar, para não travar outros handlers)
   dropdownBtn.addEventListener('click', (e) => e.stopPropagation());
 
   let lockOffcanvas = false;
