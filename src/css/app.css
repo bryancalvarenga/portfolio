@@ -349,8 +349,7 @@ footer {
 }
 .lang-btn:hover, .lang-btn:focus { border-color: #6f42c1; box-shadow: none; }
 .fi { border-radius: 3px; }
-.navbar { overflow: visible; } /* evita cortar o dropdown */
-
+.navbar { overflow: visible; } 
 .language-menu {
   --bs-dropdown-min-width: 16rem;
   min-width: 16rem;
@@ -385,11 +384,11 @@ footer {
   transform: translate3d(0,0,0) !important;
 }
 @media (max-width: 991.98px) {
-  .language-dropdown { display: none !important; }        /* header some no mobile */
-  .language-dropdown-mobile { display: block !important; } /* offcanvas aparece no mobile */
+  .language-dropdown { display: none !important; }       
+  .language-dropdown-mobile { display: block !important; } 
 }
 @media (min-width: 992px) {
-  .language-dropdown-mobile { display: none !important; }  /* offcanvas some no desktop */
+  .language-dropdown-mobile { display: none !important; } 
 }
 @media (max-width: 380px) {
   .dropdown-menu.language-menu.show {
@@ -398,10 +397,7 @@ footer {
     width: auto;
   }
 }
-
-
 /* Evitar que o SVG encolha dentro de botões e chips */
-
 .btn .lucide, .chip .lucide {
   width: 1em;
   height: 1em;
