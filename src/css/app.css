@@ -126,8 +126,6 @@ section { padding-block: var(--space-section-y); }
   border: 2px solid rgba(130,87,230,.45);
 }
 
-/* Apenas para mobile: inverte ordem de colunas */
-
 @media (max-width: 991.98px) {
   .reverse-on-mobile {
     display: flex;
@@ -138,11 +136,9 @@ section { padding-block: var(--space-section-y); }
 /* =========================================================
    COMPONENTES
 ========================================================= */
-/* títulos e subtítulos de seção */
 .section-title { font-size: var(--fs-h2); margin-bottom: 1.25rem; }
 .section-sub { color: var(--muted-color); margin-bottom: 2rem; }
 
-/* cards de projetos */
 .project-card {
   background: var(--surface-1);
   border: 1px solid rgba(255,255,255,.08);
@@ -164,7 +160,6 @@ section { padding-block: var(--space-section-y); }
   color: #fff;
 }
 
-/* chips/tecnologias */
 .chip {
   display: inline-flex; align-items: center; gap: .4rem;
   padding: .35rem .6rem; font-size: .92rem; font-weight: 500;
@@ -172,7 +167,6 @@ section { padding-block: var(--space-section-y); }
   background: rgba(130,87,230,.12); color:#e9e3ff; border: 1px solid rgba(130,87,230,.3);
 }
 
-/* ícones Lucide */
 [data-lucide] { width: 18px; height: 18px; stroke-width: 1.75; vertical-align: -2px; opacity: .9; }
 .hero .btn [data-lucide] { width: 16px; height: 16px; vertical-align: -1px; }
 
@@ -237,8 +231,6 @@ section { padding-block: var(--space-section-y); }
 /* =========================================================
    NAVBAR + OFFCANVAS
 ========================================================= */
-
-/* navbar base */
 .navbar {
   background: rgba(14,14,22,.7);
   backdrop-filter: blur(8px);
@@ -252,13 +244,11 @@ section { padding-block: var(--space-section-y); }
 }
 .navbar .nav-link:hover { color: var(--title-color); }
 
-/* centraliza menu e mantém CTA à direita */
 @media (min-width: 992px) {
   .navbar .navbar-collapse { display: flex; align-items: center; }
   .navbar .navbar-nav { margin-left: auto; margin-right: auto; }
 }
 
-/* toggler (mobile) */
 .navbar-dark .navbar-toggler {
   border-color: rgba(255,255,255,.25);
   border-radius: .5rem;
@@ -267,12 +257,10 @@ section { padding-block: var(--space-section-y); }
   box-shadow: 0 0 0 .2rem rgba(130,87,230,.35);
 }
 
-/* Off Canvas */
 .offcanvas {
   z-index: 2000 !important;
 }
 
-/* offcanvas lateral esquerdo */
 #mobileNav.offcanvas-start {
   --bs-offcanvas-width: min(88vw, 360px);
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
@@ -376,7 +364,6 @@ footer {
   gap: .25rem .75rem;
 }
 
-/* Itens */
 .language-menu .dropdown-item {
   display: flex !important;
   align-items: center;
@@ -391,15 +378,12 @@ footer {
   color: #fff !important;
 }
 
-/* Alinhar embaixo do botão (desktop). Requer data-bs-display="static" */
 .language-dropdown .dropdown-menu.language-menu[data-bs-popper] {
   left: 0 !important;
   right: auto !important;
   margin-top: .5rem;
   transform: translate3d(0,0,0) !important;
 }
-
-/* Responsivo: esconder do header no mobile; offcanvas só no mobile */
 @media (max-width: 991.98px) {
   .language-dropdown { display: none !important; }        /* header some no mobile */
   .language-dropdown-mobile { display: block !important; } /* offcanvas aparece no mobile */
@@ -407,12 +391,21 @@ footer {
 @media (min-width: 992px) {
   .language-dropdown-mobile { display: none !important; }  /* offcanvas some no desktop */
 }
-
-/* Telas muito estreitas: 1 coluna */
 @media (max-width: 380px) {
   .dropdown-menu.language-menu.show {
     grid-template-columns: 1fr;
     min-width: 12rem;
     width: auto;
   }
+}
+
+
+/* Evitar que o SVG encolha dentro de botões e chips */
+
+.btn .lucide, .chip .lucide {
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  display: inline-block;
+  stroke-width: 2;
 }

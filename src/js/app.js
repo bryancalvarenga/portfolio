@@ -8,7 +8,18 @@
  *  5) Offcanvas: fechar ao clicar em links (mas ignorar seletor de idioma)
  * =======================================================*/
 
-// ----- FIX: dropdown dentro do offcanvas não fecha o offcanvas -----
+/* ===================================
+ * 1) Lucide icons
+ * =================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  try { window.lucide?.createIcons(); } catch (e) { console.warn('Lucide:', e); }
+
+  updateFooterYear();
+  initBootstrapValidation();
+  initReveal();
+  initOffcanvasAutoClose();
+});
+
 (() => {
   const offcanvasEl = document.getElementById('mobileNav');
   const dropdownBtn = document.getElementById('langDropdownMobile');
@@ -25,18 +36,6 @@
     if (lockOffcanvas) e.preventDefault();
   });
 })();
-
-/* ===================================
- * 1) Lucide icons
- * =================================== */
-document.addEventListener('DOMContentLoaded', () => {
-  try { window.lucide?.createIcons(); } catch (e) { console.warn('Lucide:', e); }
-
-  updateFooterYear();
-  initBootstrapValidation();
-  initReveal();
-  initOffcanvasAutoClose();
-});
 
 /* ===================================
  * 2) Atualização do ano no footer
@@ -99,9 +98,7 @@ function initOffcanvasAutoClose() {
   if (!off || !window.bootstrap?.Offcanvas) return;
 
   off.querySelectorAll('a.nav-link, .btn').forEach(el => {
-    // Não fechar ao interagir com o seletor de idioma
     if (el.closest('.language-dropdown-mobile')) return;
-    // CTA ou outros botões dentro do offcanvas podem fechar normalmente
     el.addEventListener('click', () => {
       const inst = bootstrap.Offcanvas.getInstance(off)
         || bootstrap.Offcanvas.getOrCreateInstance(off);
