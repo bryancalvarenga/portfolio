@@ -405,3 +405,17 @@ footer {
   display: inline-block;
   stroke-width: 2;
 }
+
+/* ===============================
+   ANIMAÇÃO "REVEAL"
+================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity .5s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
