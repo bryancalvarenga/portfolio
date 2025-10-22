@@ -1,6 +1,8 @@
 /* =========================================================
    THEME
 ========================================================= */
+@import url(./project-modal.css);
+
 :root {
   /* cores */
   --body-bg: #0e0e16;
@@ -397,7 +399,7 @@ footer {
     width: auto;
   }
 }
-/* Evitar que o SVG encolha dentro de botões e chips */
+
 .btn .lucide, .chip .lucide {
   width: 1em;
   height: 1em;
