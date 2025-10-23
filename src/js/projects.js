@@ -6,6 +6,15 @@ window.PROJECTS = {
       demo: "#",          
       repo: "https://github.com/rafaeldiasgarcia/sge"        
     }
+  },
+
+  portfolio: {
+    coverSrc: "./src/assets/img/portfolio-preview.webp",
+    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    links: {
+      demo: "https://www.bryanalvarenga.com.br",
+      repo: "https://github.com/bryancalvarenga/portfolio"
+    }
   }
 
   // Projetos futuros...
