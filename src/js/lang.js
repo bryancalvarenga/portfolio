@@ -76,7 +76,47 @@
               ]
             }
           }
-        }
+        },
+        portfolio: {
+          title: "Portfólio Pessoal",
+          desc: "HTML5, CSS3, Bootstrap, JavaScript. Vitrine para exibir meus trabalhos e habilidades.",
+          alt: "Preview do Portfólio Pessoal",
+          demo: "Demo",
+          code: "Código",
+          view: "Ver projeto",
+          modal: {
+            title: "Portfólio Pessoal",
+            coverAlt: "Tela do Portfólio Pessoal",
+            coverCaption: "Preview do Portfólio Pessoal",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Principais desafios",
+              aprendizados: "Aprendizados",
+              tecnologias: "Tecnologias",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositório"
+            },
+            content: {
+              contexto:
+                "O Portfólio Pessoal foi desenvolvido com o objetivo de apresentar meus projetos, habilidades e experiências como desenvolvedor web. A ideia foi criar uma vitrine digital moderna, responsiva e leve, refletindo minha identidade visual e profissional. O projeto foi planejado do zero, com atenção a detalhes de UI/UX, SEO e performance, e passou por várias iterações até chegar ao design atual.",
+              desafios: [
+                "Criar um layout autoral e coerente com minha identidade profissional.",
+                "Implementar transições suaves e animações com IntersectionObserver.",
+                "Garantir responsividade total entre dispositivos móveis e desktops.",
+                "Organizar o projeto com código limpo e modular (HTML, CSS e JS separados).",
+                "Configurar deploy estático com domínio personalizado e HTTPS via GitHub Pages/Vercel."
+              ],
+              aprendizados: [
+                "Boas práticas de design responsivo e acessibilidade.",
+                "Uso de animações performáticas com JavaScript puro.",
+                "Otimização de SEO e metadados para melhor indexação.",
+                "Deploy contínuo e gerenciamento de domínio personalizado.",
+                "Criação de uma estrutura escalável e fácil de atualizar."
+              ]
+            }
+          }
+        },
+
       },
       skills: {
         sub: "Tecnologias e ferramentas que uso no dia a dia.",
@@ -205,7 +245,47 @@
               ]
             }
           }
-        }
+        },
+        portfolio: {
+          title: "Personal Portfolio",
+          desc: "HTML5, CSS3, Bootstrap, JavaScript. A showcase to present my work and skills.",
+          alt: "Preview of the Personal Portfolio",
+          demo: "Demo",
+          code: "Code",
+          view: "View project",
+          modal: {
+            title: "Personal Portfolio",
+            coverAlt: "Screenshot of the Personal Portfolio",
+            coverCaption: "Preview of the Personal Portfolio",
+            sections: {
+              contexto: "Overview",
+              desafios: "Main Challenges",
+              aprendizados: "Key Learnings",
+              tecnologias: "Technologies",
+              demoBtn: "Open demo",
+              repoBtn: "View repository"
+            },
+            content: {
+              contexto:
+                "The Personal Portfolio was developed to present my projects, skills, and experience as a web developer. The goal was to create a modern, responsive, and lightweight digital showcase that reflects my personal and professional identity. The project was designed from scratch with a focus on UI/UX details, SEO, and performance, going through multiple iterations to reach the current design.",
+              desafios: [
+                "Designing an original layout aligned with my personal brand.",
+                "Implementing smooth transitions and animations using IntersectionObserver.",
+                "Ensuring full responsiveness across devices and screen sizes.",
+                "Maintaining clean and modular code structure (HTML, CSS, and JS separated).",
+                "Setting up static deploy with a custom domain and HTTPS via GitHub Pages/Vercel."
+              ],
+              aprendizados: [
+                "Responsive design and accessibility best practices.",
+                "Performant animations using pure JavaScript.",
+                "SEO optimization and metadata structuring.",
+                "Continuous deployment and custom domain management.",
+                "Building a scalable and easily maintainable structure."
+              ]
+            }
+          }
+        },
+
       },
       skills: {
         sub: "Technologies and tools I use day to day.",
@@ -334,7 +414,47 @@
               ]
             }
           }
-        }
+        },
+        portfolio: {
+          title: "Portafolio Personal",
+          desc: "HTML5, CSS3, Bootstrap, JavaScript. Una vitrina para mostrar mis trabajos y habilidades.",
+          alt: "Vista previa del Portafolio Personal",
+          demo: "Demo",
+          code: "Código",
+          view: "Ver proyecto",
+          modal: {
+            title: "Portafolio Personal",
+            coverAlt: "Captura de pantalla del Portafolio Personal",
+            coverCaption: "Vista previa del Portafolio Personal",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Desafíos principales",
+              aprendizados: "Aprendizajes",
+              tecnologias: "Tecnologías",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositorio"
+            },
+            content: {
+              contexto:
+                "El Portafolio Personal fue desarrollado con el objetivo de presentar mis proyectos, habilidades y experiencias como desarrollador web. La meta fue crear una vitrina digital moderna, responsiva y ligera que refleje mi identidad profesional. El proyecto fue diseñado desde cero, con enfoque en detalles de UI/UX, SEO y rendimiento, pasando por varias iteraciones hasta alcanzar su versión actual.",
+              desafios: [
+                "Diseñar un layout original coherente con mi identidad profesional.",
+                "Implementar transiciones suaves y animaciones con IntersectionObserver.",
+                "Asegurar una total adaptabilidad en dispositivos móviles y de escritorio.",
+                "Mantener un código limpio y modular (HTML, CSS y JS separados).",
+                "Configurar el despliegue estático con dominio personalizado y HTTPS mediante GitHub Pages/Vercel."
+              ],
+              aprendizados: [
+                "Buenas prácticas de diseño responsivo y accesibilidad.",
+                "Animaciones optimizadas usando JavaScript puro.",
+                "Optimización SEO y estructuración de metadatos.",
+                "Despliegue continuo y gestión de dominio personalizado.",
+                "Construcción de una estructura escalable y fácil de mantener."
+              ]
+            }
+          }
+        },
+
       },
       skills: {
         sub: "Tecnologías y herramientas que uso a diario.",
@@ -463,7 +583,47 @@
               ]
             }
           }
-        }
+        },
+        portfolio: {
+          title: "ポートフォリオサイト",
+          desc: "HTML5、CSS3、Bootstrap、JavaScript。自分の作品やスキルを紹介するためのサイトです。",
+          alt: "ポートフォリオサイトのプレビュー",
+          demo: "デモ",
+          code: "コード",
+          view: "プロジェクトを見る",
+          modal: {
+            title: "ポートフォリオサイト",
+            coverAlt: "ポートフォリオサイトのスクリーンショット",
+            coverCaption: "ポートフォリオサイトのプレビュー",
+            sections: {
+              contexto: "概要",
+              desafios: "主な課題",
+              aprendizados: "学んだこと",
+              tecnologias: "使用技術",
+              demoBtn: "デモを開く",
+              repoBtn: "リポジトリを見る"
+            },
+            content: {
+              contexto:
+                "このポートフォリオサイトは、私のプロジェクト、スキル、経験を紹介するために開発されました。モダンでレスポンシブ、かつ軽量なデジタルショーケースとして、自分のアイデンティティを反映させることを目指しました。UI/UX、SEO、パフォーマンスに重点を置き、何度も改良を重ねて現在のデザインに至りました。",
+              desafios: [
+                "自分のブランドに合ったオリジナルデザインを作成すること。",
+                "IntersectionObserverを使用してスムーズなトランジションとアニメーションを実装すること。",
+                "あらゆるデバイスで完全なレスポンシブ対応を実現すること。",
+                "HTML、CSS、JSを分離したクリーンでモジュール化されたコード構造を維持すること。",
+                "GitHub Pages/Vercelを利用し、独自ドメインとHTTPSで静的デプロイを設定すること。"
+              ],
+              aprendizados: [
+                "レスポンシブデザインとアクセシビリティのベストプラクティス。",
+                "純粋なJavaScriptによる高パフォーマンスなアニメーション。",
+                "SEO最適化とメタデータ構造化。",
+                "継続的デプロイと独自ドメイン管理の実践。",
+                "スケーラブルで保守しやすい構成の構築。"
+              ]
+            }
+          }
+        },
+
       },
       skills: {
         sub: "日常的に使用している技術とツール。",
