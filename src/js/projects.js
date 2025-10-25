@@ -10,7 +10,7 @@ window.PROJECTS = {
 
   portfolio: {
     coverSrc: "./src/assets/img/portfolio-preview.webp",
-    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "Formspree"],
     links: {
       demo: "https://www.bryanalvarenga.com.br",
       repo: "https://github.com/bryancalvarenga/portfolio"
