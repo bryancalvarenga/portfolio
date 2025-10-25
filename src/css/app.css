@@ -78,6 +78,7 @@ section { padding-block: var(--space-section-y); }
 /* =========================================================
    HERO
 ========================================================= */
+
 .hero {
   position: relative;
   background:
@@ -171,6 +172,13 @@ section { padding-block: var(--space-section-y); }
 
 [data-lucide] { width: 18px; height: 18px; stroke-width: 1.75; vertical-align: -2px; opacity: .9; }
 .hero .btn [data-lucide] { width: 16px; height: 16px; vertical-align: -1px; }
+
+.progress { background: #151528; }
+.progress-bar { background: linear-gradient(90deg, #7b2ff7, #f107a3); }
+
+
+/* SOMENTE PARA O DESKTOP - AJUSTE DE MARGEM EM HABILIDADES */
+@media (min-width: 992px){ #habilidades .skills-group.learning{ margin-top: -5rem; }}
 
 /* =========================================================
    FORMAÇÃO & EXPERIÊNCIA
@@ -421,3 +429,48 @@ footer {
   opacity: 1;
   transform: none;
 }
+
+/* ==========================================
+   CHIPS — Hero e Habilidades 
+========================================== */
+.hero-techs .chip,
+#habilidades .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  padding: .48rem .72rem;
+  border-radius: 999px;
+  background: rgba(123, 47, 247, .10);
+  border: 1px solid rgba(123, 47, 247, .25);
+  color: #e9e9f3;
+  font-weight: 500;
+  font-size: .95rem;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.hero-techs .chip i[class^="devicon-"],
+.hero-techs .chip i[class*=" devicon-"],
+#habilidades .chip i[class^="devicon-"],
+#habilidades .chip i[class*=" devicon-"] {
+  font-size: 1.05rem;
+  line-height: 1;
+  display: inline-block;
+  opacity: .95;
+}
+
+.hero-techs .chip [data-lucide],
+#habilidades .chip [data-lucide] {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.hero-techs .chip:hover,
+#habilidades .chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(123, 47, 247, .45);
+  box-shadow:
+    0 0 0 1px rgba(123, 47, 247, .22),
+    0 5px 10px rgba(123, 47, 247, .18);
+}
+
+

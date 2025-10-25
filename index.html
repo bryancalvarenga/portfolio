@@ -44,13 +44,18 @@
       href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"
     />
     <link rel="stylesheet" href="./src/css/app.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="a11y.skipToContent"
       >Pular para o conteúdo</a
     >
 
-  <!-- =========================================================
+    <!-- =========================================================
        NAVBAR
   ========================================================== -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -177,7 +182,7 @@
       </div>
       <div class="offcanvas-body pt-0">
         <!-- SELETOR DE IDIOMA -->
-        <div class="language-dropdown-mobile d-lg-none mb-3 ">
+        <div class="language-dropdown-mobile d-lg-none mb-3">
           <div class="dropdown">
             <button
               class="btn btn-sm lang-btn w-100 d-inline-flex justify-content-between align-items-center"
@@ -187,7 +192,8 @@
               data-bs-auto-close="outside"
               aria-expanded="false"
               aria-label="Selecionar idioma"
-              data-i18n="a11y.languageSelector" data-i18n-attr="aria-label"
+              data-i18n="a11y.languageSelector"
+              data-i18n-attr="aria-label"
             >
               <span class="d-inline-flex align-items-center gap-2">
                 <span class="fi fi-br lang-flag"></span>
@@ -288,29 +294,51 @@
                 e MySQL, com experiência em Docker, Bootstrap e Tailwind.
               </p>
               <div class="d-flex flex-wrap gap-2 hero-actions">
-                <a class="btn btn-primary d-flex align-items-center" href="#projetos">
+                <a
+                  class="btn btn-primary d-flex align-items-center"
+                  href="#projetos"
+                >
                   <i data-lucide="rocket" class="me-2"></i>
                   <span data-i18n="cta.verProjetos">Ver projetos</span>
                 </a>
-                <a class="btn btn-outline-light d-flex align-items-center" href="#contato">
+                <a
+                  class="btn btn-outline-light d-flex align-items-center"
+                  href="#contato"
+                >
                   <i data-lucide="mail" class="me-2"></i>
                   <span data-i18n="cta.contato">Entrar em contato</span>
                 </a>
               </div>
             </div>
+
             <div class="col-12 col-lg-5 text-center">
-              <img
-                class="avatar mb-2"
-                src="./src/assets/img/profile-img.jpg"
-                alt="Foto de perfil de Bryan"
-                data-i18n="hero.avatarAlt"
-                data-i18n-attr="alt"
-              />
-              <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
-                <span class="chip"><i data-lucide="code"></i> PHP</span>
-                <span class="chip"><i data-lucide="database"></i> MySQL</span>
-                <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
-                <span class="chip"><i data-lucide="boxes"></i> Docker</span>
+              <div class="hero-avatar mx-auto">
+                <img
+                  class="avatar mb-2"
+                  src="./src/assets/img/profile-img.jpg"
+                  alt="Foto de perfil de Bryan"
+                  loading="lazy"
+                  decoding="async"
+                  width="160"
+                  height="160"
+                  data-i18n="hero.avatarAlt"
+                  data-i18n-attr="alt"
+                />
+              </div>
+
+              <div
+                class="hero-techs d-flex flex-wrap justify-content-center gap-2 mt-3"
+              >
+                <span class="chip"><i class="devicon-php-plain"></i> PHP</span>
+                <span class="chip"
+                  ><i class="devicon-mysql-plain"></i> MySQL</span
+                >
+                <span class="chip"
+                  ><i class="devicon-java-plain"></i> Java</span
+                >
+                <span class="chip"
+                  ><i class="devicon-python-plain"></i> Python</span
+                >
               </div>
             </div>
           </div>
@@ -348,10 +376,9 @@
             Alguns trabalhos recentes.
           </p>
           <div class="row g-4">
-
             <!-- PROJETO 1 -->
             <div class="col-12 col-md-6 col-lg-4">
-              <article 
+              <article
                 class="project-card reveal h-100 d-flex flex-column"
                 data-reveal="up"
                 data-reveal-delay="100"
@@ -374,7 +401,6 @@
                     pública.
                   </p>
                   <div class="mt-auto d-flex gap-2 pt-2">
-
                     <button
                       class="btn btn-sm btn-primary d-flex align-items-center js-open-project"
                       data-project="sge"
@@ -392,7 +418,6 @@
                       <i data-lucide="github" class="me-1"></i>
                       <span data-i18n="projects.sge.code">Código</span>
                     </a>
-  
                   </div>
                 </div>
               </article>
@@ -400,7 +425,7 @@
 
             <!-- PROJETO 2 -->
             <div class="col-12 col-md-6 col-lg-4">
-              <article 
+              <article
                 class="project-card reveal h-100 d-flex flex-column"
                 data-reveal="up"
                 data-reveal-delay="100"
@@ -418,17 +443,22 @@
                   <h3 class="h5 m-0" data-i18n="projects.portfolio.title">
                     Portfólio Pessoal
                   </h3>
-                  <p class="m-0 text-secondary" data-i18n="projects.portfolio.desc">
-                    HTML5, CSS3, Bootstrap, JavaScript. Vitrini para exibir meus trabalhos.
+                  <p
+                    class="m-0 text-secondary"
+                    data-i18n="projects.portfolio.desc"
+                  >
+                    HTML5, CSS3, Bootstrap, JavaScript. Vitrini para exibir meus
+                    trabalhos.
                   </p>
                   <div class="mt-auto d-flex gap-2 pt-2">
-
                     <button
                       class="btn btn-sm btn-primary d-flex align-items-center js-open-project"
                       data-project="portfolio"
                     >
                       <i data-lucide="external-link" class="me-1"></i>
-                      <span data-i18n="projects.portfolio.view">Ver projeto</span>
+                      <span data-i18n="projects.portfolio.view"
+                        >Ver projeto</span
+                      >
                     </button>
 
                     <a
@@ -440,7 +470,6 @@
                       <i data-lucide="github" class="me-1"></i>
                       <span data-i18n="projects.portfolio.code">Código</span>
                     </a>
-  
                   </div>
                 </div>
               </article>
@@ -458,18 +487,208 @@
           <p class="section-sub" data-i18n="skills.sub">
             Tecnologias e ferramentas que uso no dia a dia.
           </p>
-          <div class="d-flex flex-wrap gap-2">
-            <span class="chip"><i data-lucide="code"></i> PHP</span>
-            <span class="chip"><i data-lucide="leaf"></i> Spring Boot</span>
-            <span class="chip"><i data-lucide="database"></i> MySQL</span>
-            <span class="chip"><i data-lucide="boxes"></i> Docker</span>
-            <span class="chip"
-              ><i data-lucide="git-branch"></i> Git/GitHub</span
-            >
-            <span class="chip"><i data-lucide="layout"></i> Bootstrap</span>
-            <span class="chip"><i data-lucide="sparkles"></i> Tailwind</span>
-            <span class="chip"><i data-lucide="terminal"></i> Linux/CLI</span>
-            <span class="chip"><i data-lucide="braces"></i> Python</span>
+
+          <div class="row g-4">
+            <!-- Back-end -->
+            <div class="col-12 col-lg-6 skills-group backend">
+              <h3 class="h5 mb-3" data-i18n="skills.groups.backend">
+                Back-end
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip"><i class="devicon-php-plain"></i> PHP</span>
+                <span class="chip"
+                  ><i class="devicon-mysql-plain"></i> MySQL</span
+                >
+                <span class="chip"><i class="devicon-java-plain"></i> Java</span>
+                <span class="chip"><i class="devicon-python-plain"></i> Python</span>
+                <span class="chip"
+                  ><i class="devicon-spring-plain"></i> Spring Boot</span
+                >
+                
+              </div>
+            </div>
+
+            <!-- Front-end -->
+            <div class="col-12 col-lg-6 skills-group frontend">
+              <h3 class="h5 mb-3" data-i18n="skills.groups.frontend">
+                Front-end
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip"
+                  ><i class="devicon-html5-plain"></i> HTML</span
+                >
+                <span class="chip"
+                  ><i class="devicon-css3-plain"></i> CSS</span
+                >
+                <span class="chip"
+                  ><i class="devicon-bootstrap-plain"></i> Bootstrap</span
+                >
+                <span class="chip"
+                  ><i class="devicon-tailwindcss-plain"></i> Tailwind</span
+                >
+              </div>
+            </div>
+
+            <!-- Ferramentas / DevOps -->
+            <div class="col-12 col-lg-6 skills-group tools">
+              <h3 class="h5 mb-3" data-i18n="skills.groups.tools">
+                Ferramentas & DevOps
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip"
+                  ><i class="devicon-docker-plain"></i> Docker</span
+                >
+                <span class="chip"
+                  ><i class="devicon-git-plain"></i> Git/GitHub</span
+                >
+                <span class="chip"
+                  ><i class="devicon-linux-plain"></i> Linux/CLI</span
+                >
+                <span class="chip"
+                  ><i class="devicon-vscode-plain"></i> VS Code</span
+                >
+                <span class="chip"
+                  ><i class="devicon-figma-plain"></i> Figma</span
+                >
+                <span class="chip"
+                  ><i class="devicon-trello-plain"></i> Trello</span
+                >
+                <span class="chip"
+                  ><i class="devicon-eclipse-plain"></i> Eclipse IDE</span
+                >
+              </div>
+            </div>
+
+            <!-- Soft skills -->
+            <div class="col-12 col-lg-6 skills-group soft">
+              <h3 class="h5 mb-3" data-i18n="skills.groups.soft">
+                Soft skills
+              </h3>
+
+              <!-- Comunicação -->
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between small text-secondary mb-1"
+                >
+                  <span data-i18n="skills.soft.comunicacao">Comunicação</span>
+                  <span data-i18n="skills.levels.avancado">Avançado</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Comunicação"
+                  aria-valuenow="88"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <!-- Trabalho em equipe -->
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between small text-secondary mb-1"
+                >
+                  <span data-i18n="skills.soft.equipe">Trabalho em equipe</span>
+                  <span data-i18n="skills.levels.avancado">Avançado</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Trabalho em equipe"
+                  aria-valuenow="82"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 82%"></div>
+                </div>
+              </div>
+
+              <!-- Resolução de problemas -->
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between small text-secondary mb-1"
+                >
+                  <span data-i18n="skills.soft.problemas"
+                    >Resolução de problemas</span
+                  >
+                  <span data-i18n="skills.levels.avancado">Avançado</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Resolução de problemas"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <!-- Aprendizado contínuo -->
+              <div class="mb-3">
+                <div
+                  class="d-flex justify-content-between small text-secondary mb-1"
+                >
+                  <span data-i18n="skills.soft.aprendizado"
+                    >Aprendizado contínuo</span
+                  >
+                  <span data-i18n="skills.levels.avancado">Avançado</span>
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Aprendizado contínuo"
+                  aria-valuenow="86"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 86%"></div>
+                </div>
+              </div>
+
+              <!-- Gestão de tempo -->
+              <div class="mb-0">
+                <div
+                  class="d-flex justify-content-between small text-secondary mb-1"
+                >
+                  <span data-i18n="skills.soft.tempo">Gestão de tempo</span>
+                  <span data-i18n="skills.levels.intermediario"
+                    >Intermediário</span
+                  >
+                </div>
+                <div
+                  class="progress"
+                  role="progressbar"
+                  aria-label="Gestão de tempo"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Estudando -->
+            <div class="col-12 col-lg-6 skills-group learning">
+              <h3 class="h5 mb-3" data-i18n="skills.groups.learning">
+                Estudando
+              </h3>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip"
+                  ><i class="devicon-javascript-plain"></i> JavaScript</span
+                >
+                <span class="chip"
+                  ><i class="devicon-react-original"></i> React</span
+                >
+                <span class="chip"
+                  ><i class="devicon-laravel-plain"></i> Laravel</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -586,52 +805,124 @@
           </p>
           <div class="row g-4">
             <div class="col-12 col-lg-7">
-              <form class="needs-validation" novalidate action="https://formspree.io/f/manppgoy" method="POST">
+              <form
+                class="needs-validation"
+                novalidate
+                action="https://formspree.io/f/manppgoy"
+                method="POST"
+              >
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label for="name" class="form-label" data-i18n="form.nomeLabel">Nome</label>
-                    <input id="name" name="name" type="text" class="form-control" required />
-                    <div class="invalid-feedback" data-i18n="form.nomeInvalid">Informe seu nome.</div>
+                    <label
+                      for="name"
+                      class="form-label"
+                      data-i18n="form.nomeLabel"
+                      >Nome</label
+                    >
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback" data-i18n="form.nomeInvalid">
+                      Informe seu nome.
+                    </div>
                   </div>
 
                   <div class="col-md-6">
-                    <label for="email" class="form-label" data-i18n="form.emailLabel">E-mail</label>
-                    <input id="email" name="email" type="email" class="form-control" required />
-                    <div class="invalid-feedback" data-i18n="form.emailInvalid">Informe um e-mail válido.</div>
+                    <label
+                      for="email"
+                      class="form-label"
+                      data-i18n="form.emailLabel"
+                      >E-mail</label
+                    >
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback" data-i18n="form.emailInvalid">
+                      Informe um e-mail válido.
+                    </div>
                   </div>
 
                   <div class="col-12">
-                    <label for="message" class="form-label" data-i18n="form.mensagemLabel">Mensagem</label>
-                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                    <div class="invalid-feedback" data-i18n="form.mensagemInvalid">Escreva uma mensagem.</div>
+                    <label
+                      for="message"
+                      class="form-label"
+                      data-i18n="form.mensagemLabel"
+                      >Mensagem</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      rows="5"
+                      required
+                    ></textarea>
+                    <div
+                      class="invalid-feedback"
+                      data-i18n="form.mensagemInvalid"
+                    >
+                      Escreva uma mensagem.
+                    </div>
                   </div>
 
                   <div class="col-12 d-flex align-items-center gap-3">
-                    <button class="btn btn-primary d-flex align-items-center" type="submit">
+                    <button
+                      class="btn btn-primary d-flex align-items-center"
+                      type="submit"
+                    >
                       <i data-lucide="send" class="me-2"></i>
                       <span data-i18n="form.enviar">Enviar</span>
                     </button>
-                    <small class="text-secondary" data-i18n="contact.sla">Resposta em até 24h úteis.</small>
+                    <small class="text-secondary" data-i18n="contact.sla"
+                      >Resposta em até 24h úteis.</small
+                    >
                   </div>
                 </div>
               </form>
             </div>
 
             <div class="col-12 col-lg-5">
-              <div class="p-4 rounded-4" style="background: var(--surface-1); border: 1px solid rgba(255, 255, 255, 0.08);">
-                <h3 class="h5" data-i18n="contact.channelsTitle">Outros canais</h3>
+              <div
+                class="p-4 rounded-4"
+                style="
+                  background: var(--surface-1);
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                "
+              >
+                <h3 class="h5" data-i18n="contact.channelsTitle">
+                  Outros canais
+                </h3>
                 <ul class="list-unstyled mt-3 d-grid gap-2">
                   <li>
                     <i data-lucide="mail"></i>
-                    <a href="mailto:bryanalvarenga@outlook.com.br">bryanalvarenga@outlook.com.br</a>
+                    <a href="mailto:bryanalvarenga@outlook.com.br"
+                      >bryanalvarenga@outlook.com.br</a
+                    >
                   </li>
                   <li>
                     <i data-lucide="github"></i>
-                    <a href="https://github.com/bryancalvarenga" target="_blank" rel="noopener noreferrer">github.com/bryancalvarenga</a>
+                    <a
+                      href="https://github.com/bryancalvarenga"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >github.com/bryancalvarenga</a
+                    >
                   </li>
                   <li>
                     <i data-lucide="linkedin"></i>
-                    <a href="https://linkedin.com/in/bryanalvarenga" target="_blank" rel="noopener noreferrer">linkedin.com/in/bryanalvarenga</a>
+                    <a
+                      href="https://linkedin.com/in/bryanalvarenga"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >linkedin.com/in/bryanalvarenga</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -641,7 +932,7 @@
       </section>
     </main>
 
-  <!-- =========================================================
+    <!-- =========================================================
        FOOTER
   ========================================================== -->
     <footer class="py-4">
@@ -658,63 +949,97 @@
       </div>
     </footer>
 
-  <!-- =========================================================
+    <!-- =========================================================
        SCRIPTS
   ========================================================== -->
     <script>
       (function () {
-        const saved = localStorage.getItem('app:lang') || 'pt';
-        const primary = saved.toLowerCase().split('-')[0];
-        const alias = { jp: 'ja' };
-        document.documentElement.lang = alias[saved] || alias[primary] || primary || 'pt';
+        const saved = localStorage.getItem("app:lang") || "pt";
+        const primary = saved.toLowerCase().split("-")[0];
+        const alias = { jp: "ja" };
+        document.documentElement.lang =
+          alias[saved] || alias[primary] || primary || "pt";
       })();
     </script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
 
     <script defer src="./src/js/lang.js"></script>
     <script defer src="./src/js/lang-switcher.js"></script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide-icons-extra.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide-icons-extra.min.js"
+    ></script>
 
     <script defer src="./src/js/app.js"></script>
     <script defer src="./src/js/projects.js"></script>
     <script defer src="./src/js/project-modal.js"></script>
 
-
     <!-- =======================================================
         PROJECT MODAL
     ========================================================= -->
 
-    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true" aria-labelledby="projectModalLabel">
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      aria-hidden="true"
+      aria-labelledby="projectModalLabel"
+    >
       <div class="modal-dialog modal-dialog-centered modal-delicate">
         <div class="modal-content pm-content">
           <div class="modal-header pm-header">
-            <h2 class="modal-title h5 fw-semibold m-0" id="projectModalLabel">Título do projeto</h2>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            <h2 class="modal-title h5 fw-semibold m-0" id="projectModalLabel">
+              Título do projeto
+            </h2>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
           </div>
 
           <div class="modal-body pm-body">
             <figure class="pm-figure">
-              <img id="pm-cover" class="pm-cover" src="" alt="" loading="lazy">
+              <img
+                id="pm-cover"
+                class="pm-cover"
+                src=""
+                alt=""
+                loading="lazy"
+              />
               <figcaption class="pm-caption" id="pm-caption"></figcaption>
             </figure>
 
             <div class="row g-3 align-items-start">
               <div class="col-12 col-lg-8">
                 <section class="pm-section">
-                  <h3 class="pm-section-title" id="pm-title-contexto">Contexto</h3>
+                  <h3 class="pm-section-title" id="pm-title-contexto">
+                    Contexto
+                  </h3>
                   <p id="pm-contexto" class="m-0"></p>
                 </section>
 
                 <section class="pm-section">
-                  <h3 class="pm-section-title" id="pm-title-desafios">Principais desafios</h3>
+                  <h3 class="pm-section-title" id="pm-title-desafios">
+                    Principais desafios
+                  </h3>
                   <ul id="pm-desafios" class="pm-list"></ul>
                 </section>
 
                 <section class="pm-section">
-                  <h3 class="pm-section-title" id="pm-title-aprendizados">Aprendizados</h3>
+                  <h3 class="pm-section-title" id="pm-title-aprendizados">
+                    Aprendizados
+                  </h3>
                   <ul id="pm-aprendizados" class="pm-list"></ul>
                 </section>
               </div>
@@ -726,11 +1051,21 @@
                 </section>
 
                 <section class="d-grid gap-2">
-                  <a id="pm-demo" class="btn btn-primary btn-with-icon d-flex justify-content-center align-items-center" target="_blank" rel="noreferrer">
+                  <a
+                    id="pm-demo"
+                    class="btn btn-primary btn-with-icon d-flex justify-content-center align-items-center"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i data-lucide="external-link"></i>
                     <span id="pm-demo-label">Abrir demo</span>
                   </a>
-                  <a id="pm-repo" class="btn btn-outline-light btn-with-icon d-flex justify-content-center align-items-center" target="_blank" rel="noreferrer">
+                  <a
+                    id="pm-repo"
+                    class="btn btn-outline-light btn-with-icon d-flex justify-content-center align-items-center"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i data-lucide="github"></i>
                     <span id="pm-repo-label">Ver repositório</span>
                   </a>
@@ -741,13 +1076,17 @@
 
           <div class="modal-footer pm-footer">
             <small class="me-auto text-muted" id="pm-esc-hint">ESC fecha</small>
-            <button type="button" class="btn btn-outline-light" id="pm-close-btn" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              id="pm-close-btn"
+              data-bs-dismiss="modal"
+            >
               <span id="pm-close-label">Fechar</span>
             </button>
           </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

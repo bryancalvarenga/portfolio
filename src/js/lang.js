@@ -120,6 +120,25 @@
       },
       skills: {
         sub: "Tecnologias e ferramentas que uso no dia a dia.",
+        groups: {
+          backend: "Back-end",
+          frontend: "Front-end",
+          tools: "Ferramentas & DevOps",
+          soft: "Soft skills",
+          learning: "Estudando"
+        },
+        soft: {
+          comunicacao: "Comunicação",
+          equipe: "Trabalho em equipe",
+          problemas: "Resolução de problemas",
+          aprendizado: "Aprendizado contínuo",
+          tempo: "Gestão de tempo"
+        },
+        levels: {
+          basico: "Básico",
+          intermediario: "Intermediário",
+          avancado: "Avançado"
+        }
       },
       experience: {
         education: {
@@ -288,7 +307,26 @@
 
       },
       skills: {
-        sub: "Technologies and tools I use day to day.",
+        sub: "Technologies and tools I use in my daily work.",
+        groups: {
+          backend: "Back-end",
+          frontend: "Front-end",
+          tools: "Tools & DevOps",
+          soft: "Soft skills",
+          learning: "Currently learning"
+        },
+        soft: {
+          comunicacao: "Communication",
+          equipe: "Teamwork",
+          problemas: "Problem solving",
+          aprendizado: "Continuous learning",
+          tempo: "Time management"
+        },
+        levels: {
+          basico: "Basic",
+          intermediario: "Intermediate",
+          avancado: "Advanced"
+        }
       },
       experience: {
         education: {
@@ -457,7 +495,26 @@
 
       },
       skills: {
-        sub: "Tecnologías y herramientas que uso a diario.",
+        sub: "Tecnologías y herramientas que utilizo en mi día a día.",
+        groups: {
+          backend: "Back-end",
+          frontend: "Front-end",
+          tools: "Herramientas y DevOps",
+          soft: "Habilidades blandas",
+          learning: "En aprendizaje"
+        },
+        soft: {
+          comunicacao: "Comunicación",
+          equipe: "Trabajo en equipo",
+          problemas: "Resolución de problemas",
+          aprendizado: "Aprendizaje continuo",
+          tempo: "Gestión del tiempo"
+        },
+        levels: {
+          basico: "Básico",
+          intermediario: "Intermedio",
+          avancado: "Avanzado"
+        }
       },
       experience: {
         education: {
@@ -626,7 +683,26 @@
 
       },
       skills: {
-        sub: "日常的に使用している技術とツール。",
+        sub: "日常的に使用している技術とツールです。",
+        groups: {
+          backend: "バックエンド",
+          frontend: "フロントエンド",
+          tools: "ツールとDevOps",
+          soft: "ソフトスキル",
+          learning: "学習中"
+        },
+        soft: {
+          comunicacao: "コミュニケーション",
+          equipe: "チームワーク",
+          problemas: "問題解決",
+          aprendizado: "継続的な学習",
+          tempo: "時間管理"
+        },
+        levels: {
+          basico: "初級",
+          intermediario: "中級",
+          avancado: "上級"
+        }
       },
       experience: {
         education: {
