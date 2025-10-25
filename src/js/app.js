@@ -69,6 +69,7 @@ function initReveal() {
     #sobre .container > *,
     #projetos .project-card,
     #habilidades .chip,
+    #habilidades .skills-group.soft .mb-3,
     #formacao-experiencia .fx-card,
     #contato form,
     #contato .p-4
