@@ -806,6 +806,7 @@
           <div class="row g-4">
             <div class="col-12 col-lg-7">
               <form
+                id="contactForm"
                 class="needs-validation"
                 novalidate
                 action="https://formspree.io/f/manppgoy"
@@ -871,9 +872,11 @@
                       Escreva uma mensagem.
                     </div>
                   </div>
-
+                  <!-- honeypot anti-spam -->
+                  <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off" />
                   <div class="col-12 d-flex align-items-center gap-3">
                     <button
+                      id="submitBtn"
                       class="btn btn-primary d-flex align-items-center"
                       type="submit"
                     >
@@ -886,6 +889,33 @@
                   </div>
                 </div>
               </form>
+
+              <!-- POPUP MINIMALISTA -->
+              <div id="miniPopup" class="mini-popup" role="status" aria-live="polite" hidden>
+                <div class="mini-popup__card" data-state="success" tabindex="-1">
+                  <div class="mini-popup__icon" aria-hidden="true">
+                    <i id="miniPopupIcon" data-lucide="check-circle-2"></i>
+                  </div>
+                  <div class="mini-popup__content">
+                    <strong id="miniPopupTitle" data-i18n="popup.success.title">
+                      Mensagem enviada!
+                    </strong>
+                    <p id="miniPopupDesc" data-i18n="popup.success.message">
+                      Obrigado por entrar em contato. Vou te responder em breve.
+                    </p>
+                  </div>
+                  <button
+                    id="miniPopupClose"
+                    class="mini-popup__close"
+                    aria-labelledby="miniPopupCloseText">
+                    <i data-lucide="x"></i>
+                  </button>
+                  <span id="miniPopupCloseText" class="visually-hidden" data-i18n="popup.closeLabel">
+                    Fechar popup
+                  </span>
+                </div>
+              </div>
+
             </div>
 
             <div class="col-12 col-lg-5">
@@ -978,7 +1008,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/lucide@0.475.0/dist/umd/lucide-icons-extra.min.js"
     ></script>
-
+    <script src="./src/js/contact-form.js"></script>
     <script defer src="./src/js/app.js"></script>
     <script defer src="./src/js/projects.js"></script>
     <script defer src="./src/js/project-modal.js"></script>

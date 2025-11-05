@@ -173,6 +173,11 @@
         sla: "Resposta em até 24h úteis.",
         channelsTitle: "Outros canais",
       },
+      popup: {
+        success: { title: "Mensagem enviada!", message: "Obrigado por entrar em contato. Vou responder em breve." },
+        error:   { title: "Algo deu errado",   message: "Tente novamente em alguns instantes." },
+        closeLabel: "Fechar popup"
+      },
       form: {
         nomeLabel: "Nome",
         emailLabel: "E-mail",
@@ -181,10 +186,14 @@
         nomeInvalid: "Informe seu nome.",
         emailInvalid: "Informe um e-mail válido.",
         mensagemInvalid: "Escreva uma mensagem.",
+        sending: "Enviando...",
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. Todos os direitos reservados.",
         copy: "Construído com Bootstrap + um toque de roxo",
+      },
+      errors: {
+        connection: "Erro de conexão. Por favor, verifique sua internet e tente novamente."
       },
       ui: { close: "Fechar", escCloses: "ESC fecha" },
     },
@@ -361,6 +370,11 @@
         sla: "Replies within 24 business hours.",
         channelsTitle: "Other channels",
       },
+      popup: {
+        success: { title: "Message sent!", message: "Thank you for reaching out. I'll get back to you soon." },
+        error:   { title: "Something went wrong", message: "Please try again in a moment." },
+        closeLabel: "Close popup"
+      },
       form: {
         nomeLabel: "Name",
         emailLabel: "Email",
@@ -369,6 +383,10 @@
         nomeInvalid: "Please enter your name.",
         emailInvalid: "Please enter a valid email.",
         mensagemInvalid: "Please write a message.",
+        sending: "Sending...",
+      },
+      errors: {
+        connection: "Connection error. Please check your internet and try again."
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. All rights reserved.",
@@ -549,6 +567,11 @@
         sla: "Respuesta en 24 horas hábiles.",
         channelsTitle: "Otros canales",
       },
+      popup: {
+        success: { title: "¡Mensaje enviado!", message: "Gracias por ponerte en contacto. Te responderé pronto." },
+        error:   { title: "Algo salió mal",    message: "Inténtalo nuevamente en unos momentos." },
+        closeLabel: "Cerrar popup"
+      },
       form: {
         nomeLabel: "Nombre",
         emailLabel: "Correo",
@@ -557,6 +580,10 @@
         nomeInvalid: "Ingresa tu nombre.",
         emailInvalid: "Ingresa un correo válido.",
         mensagemInvalid: "Escribe un mensaje.",
+        sending: "Enviando...",
+      },
+      errors: {
+        connection: "Error de conexión. Por favor, revisa tu internet e inténtalo de nuevo."
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. Todos los derechos reservados.",
@@ -737,6 +764,11 @@
         sla: "営業日24時間以内に返信します。",
         channelsTitle: "その他の連絡先",
       },
+      popup: {
+        success: { title: "送信完了しました！", message: "お問い合わせありがとうございます。追ってご連絡いたします。" },
+        error:   { title: "エラーが発生しました", message: "しばらくしてからもう一度お試しください。" },
+        closeLabel: "ポップアップを閉じる"
+      },
       form: {
         nomeLabel: "お名前",
         emailLabel: "メールアドレス",
@@ -745,6 +777,10 @@
         nomeInvalid: "お名前を入力してください。",
         emailInvalid: "有効なメールアドレスを入力してください。",
         mensagemInvalid: "メッセージを入力してください。",
+        sending: "送信中...",
+      },
+      errors: {
+        connection: "通信エラーです。インターネット接続を確認して再試行してください。"
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. 無断複写・転載を禁じます。",
