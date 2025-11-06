@@ -15,7 +15,16 @@ window.PROJECTS = {
       demo: "https://www.bryanalvarenga.com.br",
       repo: "https://github.com/bryancalvarenga/portfolio"
     }
-  }
+  },
+
+  deliva: {
+    coverSrc: "./src/assets/img/deliva-preview.webp",
+    tech: ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT", "Stripe"],
+    links: {
+      demo: "#",
+      repo: "https://github.com/bryancalvarenga/deliva-app"
+    }
+  },
 
   // Projetos futuros...
 
