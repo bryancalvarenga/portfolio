@@ -116,7 +116,45 @@
             }
           }
         },
-
+        deliva: {
+          title: "Deliva — Sistema de Delivery Online",
+          desc: "Aplicação Full Stack de delivery com carrinho, pedidos, autenticação e pagamentos via Stripe.",
+          alt: "Preview do Deliva com vitrine de pratos e destaque de promoções.",
+          demo: "Demo",
+          code: "Código",
+          view: "Ver projeto",
+          modal: {
+            title: "Deliva — Sistema de Delivery Online",
+            coverAlt: "Tela inicial do sistema Deliva com catálogo e destaque de pratos",
+            coverCaption: "Preview da versão final em produção.",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Principais desafios",
+              aprendizados: "Aprendizados",
+              tecnologias: "Tecnologias",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositório"
+            },
+            content: {
+              contexto:
+                "O Deliva é um sistema completo de delivery que permite ao usuário navegar pelo catálogo, adicionar itens ao carrinho, criar uma conta, acompanhar pedidos em tempo real e realizar pagamentos online via Stripe. O projeto segue uma arquitetura moderna com frontend em React, backend em Node/Express, banco de dados MongoDB e autenticação JWT.",
+              desafios: [
+                "Criar uma arquitetura modular separando frontend, backend e painel administrativo.",
+                "Desenvolver carrinho persistente sincronizado entre cliente e servidor.",
+                "Implementar autenticação segura com JWT e proteção de rotas.",
+                "Integrar pagamento online via Stripe com confirmação de pedido.",
+                "Criar painel administrativo para gerenciar produtos e pedidos."
+              ],
+              aprendizados: [
+                "Modelagem de banco utilizando MongoDB e Mongoose.",
+                "Fluxo completo de autenticação (login, registro e sessão persistente).",
+                "Gerenciamento de estado global no frontend.",
+                "Integração com gateway de pagamento real (Stripe).",
+                "Criação de UI responsiva e centrada em experiência do usuário."
+              ]
+            }
+          }
+        },
       },
       skills: {
         sub: "Tecnologias e ferramentas que uso no dia a dia.",
@@ -313,7 +351,45 @@
             }
           }
         },
-
+        deliva: {
+          title: "Deliva — Online Food Delivery System",
+          desc: "Full Stack delivery app with cart, order tracking, authentication and Stripe payments.",
+          alt: "Preview of Deliva interface showing featured dishes and categories.",
+          demo: "Live Demo",
+          code: "Source Code",
+          view: "View Project",
+          modal: {
+            title: "Deliva — Online Food Delivery System",
+            coverAlt: "Home screen preview displaying highlighted meals and category menu.",
+            coverCaption: "Final production version preview.",
+            sections: {
+              contexto: "Overview",
+              desafios: "Key Challenges",
+              aprendizados: "Key Learnings",
+              tecnologias: "Technologies",
+              demoBtn: "Open Demo",
+              repoBtn: "View Repository"
+            },
+            content: {
+              contexto:
+                "Deliva is a complete food delivery system that allows users to browse meals, manage a cart, create accounts, place orders and pay securely via Stripe. The project is built using a modern architecture featuring React on the frontend, Node/Express on the backend, MongoDB for database management and JWT authentication.",
+              desafios: [
+                "Designing a modular architecture separating frontend, backend, and admin dashboard.",
+                "Implementing persistent cart state synced between browser and API.",
+                "Securing private routes using JWT authentication and token validation.",
+                "Integrating real online payments with Stripe.",
+                "Developing an admin panel for managing products and orders."
+              ],
+              aprendizados: [
+                "Database modeling using MongoDB and Mongoose.",
+                "Building full authentication flow with persistent login.",
+                "Global state management on the frontend.",
+                "Payment workflow integration using Stripe.",
+                "Designing responsive and user-focused UI."
+              ]
+            }
+          }
+        },
       },
       skills: {
         sub: "Technologies and tools I use in my daily work.",
@@ -506,6 +582,45 @@
                 "Optimización SEO y estructuración de metadatos.",
                 "Despliegue continuo y gestión de dominio personalizado.",
                 "Construcción de una estructura escalable y fácil de mantener."
+              ]
+            }
+          }
+        },
+        deliva: {
+          title: "Deliva — Sistema de Delivery Online",
+          desc: "Aplicación Full Stack con carrito, pedidos, autenticación y pagos con Stripe.",
+          alt: "Vista previa de Deliva con menú de platos y categorías.",
+          demo: "Demo en vivo",
+          code: "Código",
+          view: "Ver proyecto",
+          modal: {
+            title: "Deliva — Sistema de Delivery Online",
+            coverAlt: "Pantalla inicial mostrando platos destacados y menú de categorías.",
+            coverCaption: "Vista previa de la versión final.",
+            sections: {
+              contexto: "Contexto",
+              desafios: "Desafíos principales",
+              aprendizados: "Aprendizajes clave",
+              tecnologias: "Tecnologías",
+              demoBtn: "Abrir demo",
+              repoBtn: "Ver repositorio"
+            },
+            content: {
+              contexto:
+                "Deliva es un sistema completo de entrega de comida que permite a los usuarios explorar el catálogo, gestionar un carrito, crear una cuenta, realizar pedidos y pagar en línea mediante Stripe. La arquitectura se basa en React para el frontend, Node/Express para el backend, MongoDB como base de datos y autenticación JWT.",
+              desafios: [
+                "Diseñar una arquitectura modular separando frontend, backend y panel administrativo.",
+                "Implementar carrito persistente sincronizado con la API.",
+                "Proteger rutas privadas mediante JWT.",
+                "Integrar pagos online reales con Stripe.",
+                "Construir un panel administrativo para gestión de platos y pedidos."
+              ],
+              aprendizados: [
+                "Modelado de datos con MongoDB y Mongoose.",
+                "Flujo de autenticación completo con sesión persistente.",
+                "Manejo de estado global en el frontend.",
+                "Integración de pagos en línea usando Stripe.",
+                "Diseño de interfaz responsiva centrada en la experiencia del usuario."
               ]
             }
           }
@@ -703,6 +818,45 @@
                 "SEO最適化とメタデータ構造化。",
                 "継続的デプロイと独自ドメイン管理の実践。",
                 "スケーラブルで保守しやすい構成の構築。"
+              ]
+            }
+          }
+        },
+        deliva: {
+          title: "Deliva — オンラインフードデリバリーシステム",
+          desc: "カート、注文管理、認証、Stripe 決済を備えたフルスタックアプリ。",
+          alt: "Deliva のメイン画面とメニューカテゴリのプレビュー",
+          demo: "デモ",
+          code: "コード",
+          view: "プロジェクトを見る",
+          modal: {
+            title: "Deliva — オンラインフードデリバリーシステム",
+            coverAlt: "料理イメージが表示されたトップページ画面",
+            coverCaption: "最終版のプレビューデザイン。",
+            sections: {
+              contexto: "概要",
+              desafios: "主な課題",
+              aprendizados: "学んだこと",
+              tecnologias: "技術スタック",
+              demoBtn: "デモを開く",
+              repoBtn: "リポジトリを見る"
+            },
+            content: {
+              contexto:
+                "Deliva は、ユーザーがメニューを閲覧し、カートに追加し、アカウントを作成し、注文し、Stripe を通してオンライン決済ができるデリバリーシステムです。フロントエンドは React、バックエンドは Node/Express、データベースは MongoDB、認証は JWT を使用しています。",
+              desafios: [
+                "フロントエンド・バックエンド・管理パネルを分離した構成設計。",
+                "API と同期した永続的なカートの管理。",
+                "JWT を使った認証保護付きルートの実装。",
+                "Stripe によるオンライン決済の統合。",
+                "管理者用の注文・商品管理パネルの作成。"
+              ],
+              aprendizados: [
+                "MongoDB と Mongoose を使ったデータモデリング。",
+                "永続ログイン対応の認証フロー構築。",
+                "フロントエンドでのグローバル状態管理。",
+                "Stripe 決済フローの実装。",
+                "レスポンシブで使いやすい UI のデザイン。"
               ]
             }
           }

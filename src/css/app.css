@@ -123,8 +123,8 @@ section { padding-block: var(--space-section-y); }
 @media (max-width: 768px) { .hero-actions { gap: .5rem !important; } }
 
 .avatar {
-  width: clamp(84px, 9vw, 104px);
-  height: clamp(84px, 9vw, 104px);
+  width: clamp(110px, 26vw, 150px);
+  height: clamp(110px, 26vw, 150px);
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(130,87,230,.45);
