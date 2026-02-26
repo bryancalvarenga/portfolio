@@ -1,0 +1,21 @@
+/* =========================================================
+   THEME
+========================================================= */
+
+:root {
+    --bg: #0b0f14;          /* fundo principal */
+    --bg-soft: #11161c;     /* cards */
+    --text: #e6edf3;        /* texto principal */
+    --text-soft: #9da7b3;   /* texto secundário */
+    --accent: #7c3aed;      /* roxo tech */
+    --accent-2: #22c55e;    /* verde commit */
+    --border: #1f2933;
+}
+
+/* =========================================================
+    NAVBAR
+========================================================= */
+.navbar { 
+    backdrop-filter: blur(8px);
+    z-index: 1050; 
+}
