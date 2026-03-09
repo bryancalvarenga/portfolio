@@ -52,7 +52,7 @@ src/
 - **Transições suaves** e **reveal animations** sob demanda
 - **Formulário validado** com Bootstrap e integração real via API
 - Barra de navegação **translúcida com blur** e offcanvas mobile clean
-- **Botões roxos em degradê** consistentes em todo o site 💜
+- **Botões roxos em degradê** consistentes em todo o site
 
 ---
 
