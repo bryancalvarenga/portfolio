@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -411,7 +411,7 @@
 
                     <a
                       class="btn btn-sm btn-outline-light d-flex align-items-center btn-code"
-                      href="https://github.com/rafaeldiasgarcia/sge"
+                      href="https://github.com/bryancalvarenga/unifio-sga-app"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -484,46 +484,50 @@
               >
                 <div class="thumb">
                   <img
-                    src="./src/assets/img/deliva-preview.webp"
-                    alt="Preview do Sistema de Delivery"
+                    src="./src/assets/img/commitlog-preview.webp"
+                    alt="Preview do CommitLog"
                     class="img-fluid rounded-top"
-                    data-i18n="projects.deliva.alt"
+                    data-i18n="projects.commitlog.alt"
                     data-i18n-attr="alt"
                   />
                 </div>
                 <div class="p-3 p-md-4 d-flex flex-column gap-2 flex-grow-1">
-                  
-                  <h3 class="h5 m-0" data-i18n="projects.deliva.title">
-                    Deliva — Sistema de Delivery Online
+                  <h3 class="h5 m-0" data-i18n="projects.commitlog.title">
+                    CommitLog — Blog Técnico
                   </h3>
 
-                  <p class="m-0 text-secondary" data-i18n="projects.deliva.desc">
-                    Aplicação Full Stack com carrinho, autenticação, gerenciamento de pedidos e pagamento integrado.
+                  <p
+                    class="m-0 text-secondary"
+                    data-i18n="projects.commitlog.desc"
+                  >
+                    Blog pessoal desenvolvido com Next.js e MDX para registrar
+                    aprendizados, experimentos e decisões de arquitetura.
                   </p>
-                  
+
                   <div class="mt-auto d-flex gap-2 pt-2">
                     <button
                       class="btn btn-sm btn-primary d-flex align-items-center js-open-project"
-                      data-project="deliva"
+                      data-project="commitlog"
                     >
                       <i data-lucide="external-link" class="me-1"></i>
-                      <span data-i18n="projects.deliva.view">Ver projeto</span>
+                      <span data-i18n="projects.commitlog.view"
+                        >Ver projeto</span
+                      >
                     </button>
 
                     <a
                       class="btn btn-sm btn-outline-light d-flex align-items-center btn-code"
-                      href="https://github.com/bryancalvarenga/deliva-app"
+                      href="https://github.com/bryancalvarenga/commit-log"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <i data-lucide="github" class="me-1"></i>
-                      <span data-i18n="projects.deliva.code">Código</span>
+                      <span data-i18n="projects.commitlog.code">Código</span>
                     </a>
                   </div>
                 </div>
               </article>
             </div>
-
           </div>
         </div>
       </section>
@@ -549,12 +553,15 @@
                 <span class="chip"
                   ><i class="devicon-mysql-plain"></i> MySQL</span
                 >
-                <span class="chip"><i class="devicon-java-plain"></i> Java</span>
-                <span class="chip"><i class="devicon-python-plain"></i> Python</span>
+                <span class="chip"
+                  ><i class="devicon-java-plain"></i> Java</span
+                >
+                <span class="chip"
+                  ><i class="devicon-python-plain"></i> Python</span
+                >
                 <span class="chip"
                   ><i class="devicon-spring-plain"></i> Spring Boot</span
                 >
-                
               </div>
             </div>
 
@@ -567,9 +574,7 @@
                 <span class="chip"
                   ><i class="devicon-html5-plain"></i> HTML</span
                 >
-                <span class="chip"
-                  ><i class="devicon-css3-plain"></i> CSS</span
-                >
+                <span class="chip"><i class="devicon-css3-plain"></i> CSS</span>
                 <span class="chip"
                   ><i class="devicon-bootstrap-plain"></i> Bootstrap</span
                 >
@@ -923,7 +928,13 @@
                     </div>
                   </div>
                   <!-- honeypot anti-spam -->
-                  <input type="text" name="_gotcha" class="d-none" tabindex="-1" autocomplete="off" />
+                  <input
+                    type="text"
+                    name="_gotcha"
+                    class="d-none"
+                    tabindex="-1"
+                    autocomplete="off"
+                  />
                   <div class="col-12 d-flex align-items-center gap-3">
                     <button
                       id="submitBtn"
@@ -941,8 +952,18 @@
               </form>
 
               <!-- POPUP MINIMALISTA -->
-              <div id="miniPopup" class="mini-popup" role="status" aria-live="polite" hidden>
-                <div class="mini-popup__card" data-state="success" tabindex="-1">
+              <div
+                id="miniPopup"
+                class="mini-popup"
+                role="status"
+                aria-live="polite"
+                hidden
+              >
+                <div
+                  class="mini-popup__card"
+                  data-state="success"
+                  tabindex="-1"
+                >
                   <div class="mini-popup__icon" aria-hidden="true">
                     <i id="miniPopupIcon" data-lucide="check-circle-2"></i>
                   </div>
@@ -957,15 +978,19 @@
                   <button
                     id="miniPopupClose"
                     class="mini-popup__close"
-                    aria-labelledby="miniPopupCloseText">
+                    aria-labelledby="miniPopupCloseText"
+                  >
                     <i data-lucide="x"></i>
                   </button>
-                  <span id="miniPopupCloseText" class="visually-hidden" data-i18n="popup.closeLabel">
+                  <span
+                    id="miniPopupCloseText"
+                    class="visually-hidden"
+                    data-i18n="popup.closeLabel"
+                  >
                     Fechar popup
                   </span>
                 </div>
               </div>
-
             </div>
 
             <div class="col-12 col-lg-5">
@@ -1002,6 +1027,15 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       >linkedin.com/in/bryanalvarenga</a
+                    >
+                  </li>
+                  <li>
+                    <i data-lucide="terminal"></i>
+                    <a
+                      href="https://commitlog.com.br"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >commitlog.com.br</a
                     >
                   </li>
                 </ul>

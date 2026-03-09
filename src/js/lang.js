@@ -1,4 +1,3 @@
-
 (function () {
   const translations = {
     pt: {
@@ -56,26 +55,27 @@
               aprendizados: "Aprendizados",
               tecnologias: "Tecnologias",
               demoBtn: "Abrir demo",
-              repoBtn: "Ver repositório"
+              repoBtn: "Ver repositório",
             },
             content: {
-              contexto: "O SGE (Sistema de Gerenciamento de Eventos) é uma aplicação web desenvolvida para o Centro Universitário UNIFIO com o objetivo de modernizar e centralizar a gestão de eventos esportivos e acadêmicos na quadra poliesportiva da instituição. O projeto foi construído em equipe, com versionamento no GitHub utilizando branches, pull requests e revisões de código. Também realizamos um levantamento de requisitos e uma entrevista real com a coordenação da faculdade para alinhar as necessidades do sistema.",
+              contexto:
+                "O SGE (Sistema de Gerenciamento de Eventos) é uma aplicação web desenvolvida para o Centro Universitário UNIFIO com o objetivo de modernizar e centralizar a gestão de eventos esportivos e acadêmicos na quadra poliesportiva da instituição. O projeto foi construído em equipe, com versionamento no GitHub utilizando branches, pull requests e revisões de código. Também realizamos um levantamento de requisitos e uma entrevista real com a coordenação da faculdade para alinhar as necessidades do sistema.",
               desafios: [
                 "Implementar autenticação segura com verificação em duas etapas (2FA).",
                 "Gerenciar múltiplos níveis de acesso (usuário, administrador e superadmin).",
                 "Construir uma agenda pública dinâmica sem exigir login.",
                 "Manter comunicação assíncrona entre front-end e back-end via Fetch API e AJAX.",
-                "Organizar o projeto em arquitetura MVC e integrar PDO, PHPMailer e Composer."
+                "Organizar o projeto em arquitetura MVC e integrar PDO, PHPMailer e Composer.",
               ],
               aprendizados: [
                 "Trabalho colaborativo com GitHub (branches, commits, PRs e code review).",
                 "Experiência real de levantamento de requisitos e comunicação com cliente institucional.",
                 "Criação de componentes PHP modulares seguindo boas práticas de MVC.",
                 "Integração segura entre front-end (Fetch API/AJAX) e back-end PHP.",
-                "Uso de Docker para ambiente padronizado e fácil deploy."
-              ]
-            }
-          }
+                "Uso de Docker para ambiente padronizado e fácil deploy.",
+              ],
+            },
+          },
         },
         portfolio: {
           title: "Portfólio Pessoal",
@@ -94,7 +94,7 @@
               aprendizados: "Aprendizados",
               tecnologias: "Tecnologias",
               demoBtn: "Abrir demo",
-              repoBtn: "Ver repositório"
+              repoBtn: "Ver repositório",
             },
             content: {
               contexto:
@@ -104,56 +104,59 @@
                 "Implementar transições suaves e animações com IntersectionObserver.",
                 "Garantir responsividade total entre dispositivos móveis e desktops.",
                 "Organizar o projeto com código limpo e modular (HTML, CSS e JS separados).",
-                "Configurar deploy estático com domínio personalizado e HTTPS via GitHub Pages/Vercel."
+                "Configurar deploy estático com domínio personalizado e HTTPS via GitHub Pages/Vercel.",
               ],
               aprendizados: [
                 "Boas práticas de design responsivo e acessibilidade.",
                 "Uso de animações performáticas com JavaScript puro.",
                 "Otimização de SEO e metadados para melhor indexação.",
                 "Deploy contínuo e gerenciamento de domínio personalizado.",
-                "Criação de uma estrutura escalável e fácil de atualizar."
-              ]
-            }
-          }
+                "Criação de uma estrutura escalável e fácil de atualizar.",
+              ],
+            },
+          },
         },
-        deliva: {
-          title: "Deliva — Sistema de Delivery Online",
-          desc: "Aplicação Full Stack de delivery com carrinho, pedidos, autenticação e pagamentos via Stripe.",
-          alt: "Preview do Deliva com vitrine de pratos e destaque de promoções.",
+        commitlog: {
+          title: "CommitLog — Blog Técnico",
+          desc: "Blog pessoal para registrar aprendizados, projetos e decisões de arquitetura durante o desenvolvimento.",
+          alt: "Preview do blog CommitLog com lista de artigos técnicos.",
           demo: "Demo",
           code: "Código",
           view: "Ver projeto",
           modal: {
-            title: "Deliva — Sistema de Delivery Online",
-            coverAlt: "Tela inicial do sistema Deliva com catálogo e destaque de pratos",
-            coverCaption: "Preview da versão final em produção.",
+            title: "CommitLog — Blog Técnico",
+            coverAlt:
+              "Página inicial do blog CommitLog exibindo lista de posts",
+            coverCaption: "Preview do blog em funcionamento.",
             sections: {
               contexto: "Contexto",
               desafios: "Principais desafios",
               aprendizados: "Aprendizados",
               tecnologias: "Tecnologias",
-              demoBtn: "Abrir demo",
-              repoBtn: "Ver repositório"
+              demoBtn: "Abrir blog",
+              repoBtn: "Ver repositório",
             },
             content: {
               contexto:
-                "O Deliva é um sistema completo de delivery que permite ao usuário navegar pelo catálogo, adicionar itens ao carrinho, criar uma conta, acompanhar pedidos em tempo real e realizar pagamentos online via Stripe. O projeto segue uma arquitetura moderna com frontend em React, backend em Node/Express, banco de dados MongoDB e autenticação JWT.",
+                "CommitLog é um blog técnico pessoal criado para documentar aprendizados, projetos e reflexões sobre desenvolvimento de software. O projeto foi inicialmente planejado com uma arquitetura mais complexa, incluindo autenticação e banco de dados, mas evoluiu para uma abordagem mais simples e sustentável baseada em MDX e geração estática. O objetivo é priorizar escrita, clareza e organização de conhecimento.",
+
               desafios: [
-                "Criar uma arquitetura modular separando frontend, backend e painel administrativo.",
-                "Desenvolver carrinho persistente sincronizado entre cliente e servidor.",
-                "Implementar autenticação segura com JWT e proteção de rotas.",
-                "Integrar pagamento online via Stripe com confirmação de pedido.",
-                "Criar painel administrativo para gerenciar produtos e pedidos."
+                "Definir uma arquitetura simples que priorizasse conteúdo em vez de complexidade desnecessária.",
+                "Criar um sistema de posts baseado em MDX com renderização estática.",
+                "Organizar metadados dos artigos (slug, tags, data e tempo de leitura).",
+                "Implementar layout limpo focado em leitura e navegação entre posts.",
+                "Estruturar o projeto para fácil manutenção e publicação de novos artigos.",
               ],
+
               aprendizados: [
-                "Modelagem de banco utilizando MongoDB e Mongoose.",
-                "Fluxo completo de autenticação (login, registro e sessão persistente).",
-                "Gerenciamento de estado global no frontend.",
-                "Integração com gateway de pagamento real (Stripe).",
-                "Criação de UI responsiva e centrada em experiência do usuário."
-              ]
-            }
-          }
+                "Uso de MDX para combinar Markdown com componentes React.",
+                "Geração estática de páginas utilizando Next.js.",
+                "Organização de conteúdo em sistemas de blog baseados em arquivos.",
+                "Design de interfaces minimalistas focadas em leitura.",
+                "Importância de reduzir complexidade em projetos pessoais.",
+              ],
+            },
+          },
         },
       },
       skills: {
@@ -163,20 +166,20 @@
           frontend: "Front-end",
           tools: "Ferramentas & DevOps",
           soft: "Soft skills",
-          learning: "Estudando"
+          learning: "Estudando",
         },
         soft: {
           comunicacao: "Comunicação",
           equipe: "Trabalho em equipe",
           problemas: "Resolução de problemas",
           aprendizado: "Aprendizado contínuo",
-          tempo: "Gestão de tempo"
+          tempo: "Gestão de tempo",
         },
         levels: {
           basico: "Básico",
           intermediario: "Intermediário",
-          avancado: "Avançado"
-        }
+          avancado: "Avançado",
+        },
       },
       experience: {
         education: {
@@ -212,9 +215,15 @@
         channelsTitle: "Outros canais",
       },
       popup: {
-        success: { title: "Mensagem enviada!", message: "Obrigado por entrar em contato. Vou responder em breve." },
-        error:   { title: "Algo deu errado",   message: "Tente novamente em alguns instantes." },
-        closeLabel: "Fechar popup"
+        success: {
+          title: "Mensagem enviada!",
+          message: "Obrigado por entrar em contato. Vou responder em breve.",
+        },
+        error: {
+          title: "Algo deu errado",
+          message: "Tente novamente em alguns instantes.",
+        },
+        closeLabel: "Fechar popup",
       },
       form: {
         nomeLabel: "Nome",
@@ -231,7 +240,8 @@
         copy: "Construído com Bootstrap + um toque de roxo",
       },
       errors: {
-        connection: "Erro de conexão. Por favor, verifique sua internet e tente novamente."
+        connection:
+          "Erro de conexão. Por favor, verifique sua internet e tente novamente.",
       },
       ui: { close: "Fechar", escCloses: "ESC fecha" },
     },
@@ -291,26 +301,27 @@
               aprendizados: "Key learnings",
               tecnologias: "Technologies",
               demoBtn: "Open demo",
-              repoBtn: "View repository"
+              repoBtn: "View repository",
             },
             content: {
-              contexto: "The SGE (Event Management System) is a web application developed for UNIFIO University to modernize and centralize the management of sports and academic events held at the institution's gymnasium. The project was built collaboratively using GitHub version control (branches, pull requests, and code reviews). We also conducted a real requirement-gathering interview with the university coordination to understand their needs.",
+              contexto:
+                "The SGE (Event Management System) is a web application developed for UNIFIO University to modernize and centralize the management of sports and academic events held at the institution's gymnasium. The project was built collaboratively using GitHub version control (branches, pull requests, and code reviews). We also conducted a real requirement-gathering interview with the university coordination to understand their needs.",
               desafios: [
                 "Implement secure authentication with two-factor verification (2FA).",
                 "Handle multiple access levels (user, admin, and superadmin).",
                 "Build a public calendar view without requiring login.",
                 "Maintain asynchronous communication between front-end and back-end using Fetch API and AJAX.",
-                "Structure the project under an MVC architecture and integrate PDO, PHPMailer, and Composer."
+                "Structure the project under an MVC architecture and integrate PDO, PHPMailer, and Composer.",
               ],
               aprendizados: [
                 "Collaborative development using GitHub branches, commits, PRs, and reviews.",
                 "Real experience conducting requirement analysis with institutional clients.",
                 "Creation of modular PHP components following MVC best practices.",
                 "Secure integration between front-end (Fetch API/AJAX) and PHP back-end.",
-                "Containerized setup using Docker for consistent and reproducible environments."
-              ]
-            }
-          }
+                "Containerized setup using Docker for consistent and reproducible environments.",
+              ],
+            },
+          },
         },
         portfolio: {
           title: "Personal Portfolio",
@@ -329,7 +340,7 @@
               aprendizados: "Key Learnings",
               tecnologias: "Technologies",
               demoBtn: "Open demo",
-              repoBtn: "View repository"
+              repoBtn: "View repository",
             },
             content: {
               contexto:
@@ -339,56 +350,58 @@
                 "Implementing smooth transitions and animations using IntersectionObserver.",
                 "Ensuring full responsiveness across devices and screen sizes.",
                 "Maintaining clean and modular code structure (HTML, CSS, and JS separated).",
-                "Setting up static deploy with a custom domain and HTTPS via GitHub Pages/Vercel."
+                "Setting up static deploy with a custom domain and HTTPS via GitHub Pages/Vercel.",
               ],
               aprendizados: [
                 "Responsive design and accessibility best practices.",
                 "Performant animations using pure JavaScript.",
                 "SEO optimization and metadata structuring.",
                 "Continuous deployment and custom domain management.",
-                "Building a scalable and easily maintainable structure."
-              ]
-            }
-          }
+                "Building a scalable and easily maintainable structure.",
+              ],
+            },
+          },
         },
-        deliva: {
-          title: "Deliva — Online Food Delivery System",
-          desc: "Full Stack delivery app with cart, order tracking, authentication and Stripe payments.",
-          alt: "Preview of Deliva interface showing featured dishes and categories.",
-          demo: "Live Demo",
+        commitlog: {
+          title: "CommitLog — Technical Blog",
+          desc: "Personal blog to document learning, projects and architectural decisions during software development.",
+          alt: "Preview of CommitLog blog showing a list of technical posts.",
+          demo: "Live Blog",
           code: "Source Code",
           view: "View Project",
           modal: {
-            title: "Deliva — Online Food Delivery System",
-            coverAlt: "Home screen preview displaying highlighted meals and category menu.",
-            coverCaption: "Final production version preview.",
+            title: "CommitLog — Technical Blog",
+            coverAlt: "CommitLog homepage displaying a list of articles",
+            coverCaption: "Preview of the blog in production.",
             sections: {
               contexto: "Overview",
               desafios: "Key Challenges",
               aprendizados: "Key Learnings",
               tecnologias: "Technologies",
-              demoBtn: "Open Demo",
-              repoBtn: "View Repository"
+              demoBtn: "Open Blog",
+              repoBtn: "View Repository",
             },
             content: {
               contexto:
-                "Deliva is a complete food delivery system that allows users to browse meals, manage a cart, create accounts, place orders and pay securely via Stripe. The project is built using a modern architecture featuring React on the frontend, Node/Express on the backend, MongoDB for database management and JWT authentication.",
+                "CommitLog is a personal technical blog created to document learning, projects and reflections about software development. The project was initially designed with a more complex architecture including authentication and database integration, but later evolved into a simpler and more maintainable approach based on MDX and static generation. The main goal is to prioritize writing, clarity and knowledge sharing.",
+
               desafios: [
-                "Designing a modular architecture separating frontend, backend, and admin dashboard.",
-                "Implementing persistent cart state synced between browser and API.",
-                "Securing private routes using JWT authentication and token validation.",
-                "Integrating real online payments with Stripe.",
-                "Developing an admin panel for managing products and orders."
+                "Designing a simple architecture focused on content instead of unnecessary complexity.",
+                "Building a post system using MDX with static page generation.",
+                "Structuring metadata for articles such as slug, tags, date and reading time.",
+                "Creating a clean layout focused on readability and navigation between posts.",
+                "Organizing the project for easy maintenance and long-term content publishing.",
               ],
+
               aprendizados: [
-                "Database modeling using MongoDB and Mongoose.",
-                "Building full authentication flow with persistent login.",
-                "Global state management on the frontend.",
-                "Payment workflow integration using Stripe.",
-                "Designing responsive and user-focused UI."
-              ]
-            }
-          }
+                "Using MDX to combine Markdown with React components.",
+                "Implementing static site generation with Next.js.",
+                "Organizing blog content using a file-based structure.",
+                "Designing minimalist interfaces focused on reading experience.",
+                "Understanding the importance of reducing complexity in personal projects.",
+              ],
+            },
+          },
         },
       },
       skills: {
@@ -398,20 +411,20 @@
           frontend: "Front-end",
           tools: "Tools & DevOps",
           soft: "Soft skills",
-          learning: "Currently learning"
+          learning: "Currently learning",
         },
         soft: {
           comunicacao: "Communication",
           equipe: "Teamwork",
           problemas: "Problem solving",
           aprendizado: "Continuous learning",
-          tempo: "Time management"
+          tempo: "Time management",
         },
         levels: {
           basico: "Basic",
           intermediario: "Intermediate",
-          avancado: "Advanced"
-        }
+          avancado: "Advanced",
+        },
       },
       experience: {
         education: {
@@ -447,9 +460,15 @@
         channelsTitle: "Other channels",
       },
       popup: {
-        success: { title: "Message sent!", message: "Thank you for reaching out. I'll get back to you soon." },
-        error:   { title: "Something went wrong", message: "Please try again in a moment." },
-        closeLabel: "Close popup"
+        success: {
+          title: "Message sent!",
+          message: "Thank you for reaching out. I'll get back to you soon.",
+        },
+        error: {
+          title: "Something went wrong",
+          message: "Please try again in a moment.",
+        },
+        closeLabel: "Close popup",
       },
       form: {
         nomeLabel: "Name",
@@ -462,7 +481,8 @@
         sending: "Sending...",
       },
       errors: {
-        connection: "Connection error. Please check your internet and try again."
+        connection:
+          "Connection error. Please check your internet and try again.",
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. All rights reserved.",
@@ -518,7 +538,8 @@
           view: "Ver proyecto",
           modal: {
             title: "SGE — Gestión de Atléticas",
-            coverAlt: "Pantalla del SGA con calendario público y creación de eventos",
+            coverAlt:
+              "Pantalla del SGA con calendario público y creación de eventos",
             coverCaption: "Vista previa del sistema en entorno de desarrollo.",
             sections: {
               contexto: "Contexto",
@@ -526,26 +547,27 @@
               aprendizados: "Aprendizajes",
               tecnologias: "Tecnologías",
               demoBtn: "Abrir demo",
-              repoBtn: "Ver repositorio"
+              repoBtn: "Ver repositorio",
             },
             content: {
-              contexto: "El SGE (Sistema de Gestión de Eventos) es una aplicación web desarrollada para el Centro Universitario UNIFIO con el objetivo de modernizar y centralizar la administración de eventos deportivos y académicos realizados en el gimnasio de la institución. El proyecto fue construido en equipo utilizando control de versiones en GitHub (ramas, pull requests y revisiones de código). Además, realizamos un levantamiento de requisitos y una entrevista real con la coordinación universitaria para comprender las necesidades del sistema.",
+              contexto:
+                "El SGE (Sistema de Gestión de Eventos) es una aplicación web desarrollada para el Centro Universitario UNIFIO con el objetivo de modernizar y centralizar la administración de eventos deportivos y académicos realizados en el gimnasio de la institución. El proyecto fue construido en equipo utilizando control de versiones en GitHub (ramas, pull requests y revisiones de código). Además, realizamos un levantamiento de requisitos y una entrevista real con la coordinación universitaria para comprender las necesidades del sistema.",
               desafios: [
                 "Implementar autenticación segura con verificación en dos pasos (2FA).",
                 "Gestionar múltiples niveles de acceso (usuario, administrador y superadministrador).",
                 "Construir un calendario público dinámico sin requerir inicio de sesión.",
                 "Mantener comunicación asíncrona entre el front-end y el back-end mediante Fetch API y AJAX.",
-                "Organizar el proyecto con una arquitectura MVC e integrar PDO, PHPMailer y Composer."
+                "Organizar el proyecto con una arquitectura MVC e integrar PDO, PHPMailer y Composer.",
               ],
               aprendizados: [
                 "Trabajo colaborativo con GitHub (ramas, commits, PRs y revisión de código).",
                 "Experiencia real en levantamiento de requisitos y comunicación con un cliente institucional.",
                 "Creación de componentes PHP modulares siguiendo buenas prácticas de MVC.",
                 "Integración segura entre el front-end (Fetch API/AJAX) y el back-end en PHP.",
-                "Uso de Docker para crear un entorno estandarizado y facilitar el despliegue."
-              ]
-            }
-          }
+                "Uso de Docker para crear un entorno estandarizado y facilitar el despliegue.",
+              ],
+            },
+          },
         },
         portfolio: {
           title: "Portafolio Personal",
@@ -564,7 +586,7 @@
               aprendizados: "Aprendizajes",
               tecnologias: "Tecnologías",
               demoBtn: "Abrir demo",
-              repoBtn: "Ver repositorio"
+              repoBtn: "Ver repositorio",
             },
             content: {
               contexto:
@@ -574,58 +596,60 @@
                 "Implementar transiciones suaves y animaciones con IntersectionObserver.",
                 "Asegurar una total adaptabilidad en dispositivos móviles y de escritorio.",
                 "Mantener un código limpio y modular (HTML, CSS y JS separados).",
-                "Configurar el despliegue estático con dominio personalizado y HTTPS mediante GitHub Pages/Vercel."
+                "Configurar el despliegue estático con dominio personalizado y HTTPS mediante GitHub Pages/Vercel.",
               ],
               aprendizados: [
                 "Buenas prácticas de diseño responsivo y accesibilidad.",
                 "Animaciones optimizadas usando JavaScript puro.",
                 "Optimización SEO y estructuración de metadatos.",
                 "Despliegue continuo y gestión de dominio personalizado.",
-                "Construcción de una estructura escalable y fácil de mantener."
-              ]
-            }
-          }
+                "Construcción de una estructura escalable y fácil de mantener.",
+              ],
+            },
+          },
         },
-        deliva: {
-          title: "Deliva — Sistema de Delivery Online",
-          desc: "Aplicación Full Stack con carrito, pedidos, autenticación y pagos con Stripe.",
-          alt: "Vista previa de Deliva con menú de platos y categorías.",
-          demo: "Demo en vivo",
+        commitlog: {
+          title: "CommitLog — Blog Técnico",
+          desc: "Blog personal para documentar aprendizajes, proyectos y decisiones de arquitectura durante el desarrollo de software.",
+          alt: "Vista previa del blog CommitLog mostrando una lista de artículos técnicos.",
+          demo: "Blog en vivo",
           code: "Código",
           view: "Ver proyecto",
           modal: {
-            title: "Deliva — Sistema de Delivery Online",
-            coverAlt: "Pantalla inicial mostrando platos destacados y menú de categorías.",
-            coverCaption: "Vista previa de la versión final.",
+            title: "CommitLog — Blog Técnico",
+            coverAlt:
+              "Página inicial del blog CommitLog mostrando una lista de artículos",
+            coverCaption: "Vista previa del blog en producción.",
             sections: {
               contexto: "Contexto",
               desafios: "Desafíos principales",
               aprendizados: "Aprendizajes clave",
               tecnologias: "Tecnologías",
-              demoBtn: "Abrir demo",
-              repoBtn: "Ver repositorio"
+              demoBtn: "Abrir blog",
+              repoBtn: "Ver repositorio",
             },
             content: {
               contexto:
-                "Deliva es un sistema completo de entrega de comida que permite a los usuarios explorar el catálogo, gestionar un carrito, crear una cuenta, realizar pedidos y pagar en línea mediante Stripe. La arquitectura se basa en React para el frontend, Node/Express para el backend, MongoDB como base de datos y autenticación JWT.",
-              desafios: [
-                "Diseñar una arquitectura modular separando frontend, backend y panel administrativo.",
-                "Implementar carrito persistente sincronizado con la API.",
-                "Proteger rutas privadas mediante JWT.",
-                "Integrar pagos online reales con Stripe.",
-                "Construir un panel administrativo para gestión de platos y pedidos."
-              ],
-              aprendizados: [
-                "Modelado de datos con MongoDB y Mongoose.",
-                "Flujo de autenticación completo con sesión persistente.",
-                "Manejo de estado global en el frontend.",
-                "Integración de pagos en línea usando Stripe.",
-                "Diseño de interfaz responsiva centrada en la experiencia del usuario."
-              ]
-            }
-          }
-        },
+                "CommitLog es un blog técnico personal creado para documentar aprendizajes, proyectos y reflexiones sobre el desarrollo de software. Inicialmente el proyecto fue diseñado con una arquitectura más compleja que incluía autenticación y base de datos, pero posteriormente evolucionó hacia un enfoque más simple y sostenible basado en MDX y generación estática. El objetivo principal es priorizar la escritura, la claridad y el intercambio de conocimiento.",
 
+              desafios: [
+                "Definir una arquitectura simple enfocada en el contenido en lugar de complejidad innecesaria.",
+                "Construir un sistema de publicaciones basado en MDX con generación estática.",
+                "Organizar metadatos de los artículos como slug, etiquetas, fecha y tiempo de lectura.",
+                "Diseñar una interfaz limpia enfocada en la lectura y navegación entre artículos.",
+                "Estructurar el proyecto para facilitar el mantenimiento y la publicación de nuevos contenidos.",
+              ],
+
+              aprendizados: [
+                "Uso de MDX para combinar Markdown con componentes de React.",
+                "Implementación de generación estática de páginas con Next.js.",
+                "Organización de contenido utilizando una estructura basada en archivos.",
+                "Diseño de interfaces minimalistas enfocadas en la experiencia de lectura.",
+                "Comprensión de la importancia de reducir la complejidad en proyectos personales.",
+              ],
+            },
+          },
+        },
       },
       skills: {
         sub: "Tecnologías y herramientas que utilizo en mi día a día.",
@@ -634,20 +658,20 @@
           frontend: "Front-end",
           tools: "Herramientas y DevOps",
           soft: "Habilidades blandas",
-          learning: "En aprendizaje"
+          learning: "En aprendizaje",
         },
         soft: {
           comunicacao: "Comunicación",
           equipe: "Trabajo en equipo",
           problemas: "Resolución de problemas",
           aprendizado: "Aprendizaje continuo",
-          tempo: "Gestión del tiempo"
+          tempo: "Gestión del tiempo",
         },
         levels: {
           basico: "Básico",
           intermediario: "Intermedio",
-          avancado: "Avanzado"
-        }
+          avancado: "Avanzado",
+        },
       },
       experience: {
         education: {
@@ -683,9 +707,15 @@
         channelsTitle: "Otros canales",
       },
       popup: {
-        success: { title: "¡Mensaje enviado!", message: "Gracias por ponerte en contacto. Te responderé pronto." },
-        error:   { title: "Algo salió mal",    message: "Inténtalo nuevamente en unos momentos." },
-        closeLabel: "Cerrar popup"
+        success: {
+          title: "¡Mensaje enviado!",
+          message: "Gracias por ponerte en contacto. Te responderé pronto.",
+        },
+        error: {
+          title: "Algo salió mal",
+          message: "Inténtalo nuevamente en unos momentos.",
+        },
+        closeLabel: "Cerrar popup",
       },
       form: {
         nomeLabel: "Nombre",
@@ -698,13 +728,14 @@
         sending: "Enviando...",
       },
       errors: {
-        connection: "Error de conexión. Por favor, revisa tu internet e inténtalo de nuevo."
+        connection:
+          "Error de conexión. Por favor, revisa tu internet e inténtalo de nuevo.",
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. Todos los derechos reservados.",
         copy: "Construido con Bootstrap + un toque de púrpura",
       },
-       ui: { close: "Cerrar", escCloses: "ESC cierra" },
+      ui: { close: "Cerrar", escCloses: "ESC cierra" },
     },
 
     ja: {
@@ -762,26 +793,27 @@
               aprendizados: "学び",
               tecnologias: "技術",
               demoBtn: "デモを開く",
-              repoBtn: "リポジトリを見る"
+              repoBtn: "リポジトリを見る",
             },
             content: {
-              contexto: "SGE（イベント管理システム）は、UNIFIO大学の体育館で行われるスポーツおよび学術イベントの管理を近代化・一元化するために開発されたWebアプリケーションです。本プロジェクトはチーム開発として実施され、GitHub上でブランチ運用・プルリクエスト・コードレビューを用いて共同作業を行いました。また、大学のコーディネーターとの実際のヒアリングを通じて、システム要件を明確化しました。",
+              contexto:
+                "SGE（イベント管理システム）は、UNIFIO大学の体育館で行われるスポーツおよび学術イベントの管理を近代化・一元化するために開発されたWebアプリケーションです。本プロジェクトはチーム開発として実施され、GitHub上でブランチ運用・プルリクエスト・コードレビューを用いて共同作業を行いました。また、大学のコーディネーターとの実際のヒアリングを通じて、システム要件を明確化しました。",
               desafios: [
                 "2段階認証（2FA）による安全なログイン認証の実装。",
                 "ユーザー、管理者、スーパー管理者という複数レベルのアクセス制御。",
                 "ログイン不要で閲覧できる公開カレンダーの構築。",
                 "Fetch APIおよびAJAXを用いたフロントエンドとバックエンド間の非同期通信の維持。",
-                "MVCアーキテクチャに基づくプロジェクト構成とPDO・PHPMailer・Composerの統合。"
+                "MVCアーキテクチャに基づくプロジェクト構成とPDO・PHPMailer・Composerの統合。",
               ],
               aprendizados: [
                 "GitHubでの共同開発（ブランチ、コミット、PR、コードレビュー）。",
                 "大学の実案件を想定した要件定義とクライアントコミュニケーションの経験。",
                 "MVCのベストプラクティスに沿ったモジュール化PHPコンポーネントの作成。",
                 "Fetch API/AJAXを用いたフロントエンドとPHPバックエンドの安全な統合。",
-                "Dockerを活用した統一的な開発環境と容易なデプロイ実現。"
-              ]
-            }
-          }
+                "Dockerを活用した統一的な開発環境と容易なデプロイ実現。",
+              ],
+            },
+          },
         },
         portfolio: {
           title: "ポートフォリオサイト",
@@ -800,7 +832,7 @@
               aprendizados: "学んだこと",
               tecnologias: "使用技術",
               demoBtn: "デモを開く",
-              repoBtn: "リポジトリを見る"
+              repoBtn: "リポジトリを見る",
             },
             content: {
               contexto:
@@ -810,58 +842,59 @@
                 "IntersectionObserverを使用してスムーズなトランジションとアニメーションを実装すること。",
                 "あらゆるデバイスで完全なレスポンシブ対応を実現すること。",
                 "HTML、CSS、JSを分離したクリーンでモジュール化されたコード構造を維持すること。",
-                "GitHub Pages/Vercelを利用し、独自ドメインとHTTPSで静的デプロイを設定すること。"
+                "GitHub Pages/Vercelを利用し、独自ドメインとHTTPSで静的デプロイを設定すること。",
               ],
               aprendizados: [
                 "レスポンシブデザインとアクセシビリティのベストプラクティス。",
                 "純粋なJavaScriptによる高パフォーマンスなアニメーション。",
                 "SEO最適化とメタデータ構造化。",
                 "継続的デプロイと独自ドメイン管理の実践。",
-                "スケーラブルで保守しやすい構成の構築。"
-              ]
-            }
-          }
+                "スケーラブルで保守しやすい構成の構築。",
+              ],
+            },
+          },
         },
-        deliva: {
-          title: "Deliva — オンラインフードデリバリーシステム",
-          desc: "カート、注文管理、認証、Stripe 決済を備えたフルスタックアプリ。",
-          alt: "Deliva のメイン画面とメニューカテゴリのプレビュー",
-          demo: "デモ",
+        commitlog: {
+          title: "CommitLog — 技術ブログ",
+          desc: "ソフトウェア開発の学習内容、プロジェクト、アーキテクチャの意思決定を記録するための個人技術ブログ。",
+          alt: "技術記事の一覧を表示した CommitLog ブログのプレビュー",
+          demo: "ブログを見る",
           code: "コード",
           view: "プロジェクトを見る",
           modal: {
-            title: "Deliva — オンラインフードデリバリーシステム",
-            coverAlt: "料理イメージが表示されたトップページ画面",
-            coverCaption: "最終版のプレビューデザイン。",
+            title: "CommitLog — 技術ブログ",
+            coverAlt: "記事一覧が表示された CommitLog のトップページ",
+            coverCaption: "実際に公開されているブログのプレビュー。",
             sections: {
               contexto: "概要",
               desafios: "主な課題",
               aprendizados: "学んだこと",
               tecnologias: "技術スタック",
-              demoBtn: "デモを開く",
-              repoBtn: "リポジトリを見る"
+              demoBtn: "ブログを開く",
+              repoBtn: "リポジトリを見る",
             },
             content: {
               contexto:
-                "Deliva は、ユーザーがメニューを閲覧し、カートに追加し、アカウントを作成し、注文し、Stripe を通してオンライン決済ができるデリバリーシステムです。フロントエンドは React、バックエンドは Node/Express、データベースは MongoDB、認証は JWT を使用しています。",
-              desafios: [
-                "フロントエンド・バックエンド・管理パネルを分離した構成設計。",
-                "API と同期した永続的なカートの管理。",
-                "JWT を使った認証保護付きルートの実装。",
-                "Stripe によるオンライン決済の統合。",
-                "管理者用の注文・商品管理パネルの作成。"
-              ],
-              aprendizados: [
-                "MongoDB と Mongoose を使ったデータモデリング。",
-                "永続ログイン対応の認証フロー構築。",
-                "フロントエンドでのグローバル状態管理。",
-                "Stripe 決済フローの実装。",
-                "レスポンシブで使いやすい UI のデザイン。"
-              ]
-            }
-          }
-        },
+                "CommitLog は、ソフトウェア開発における学習、プロジェクト、設計上の考え方を記録するために作られた個人技術ブログです。最初は認証やデータベースを含むより複雑な構成として設計されましたが、その後 MDX と静的生成を中心とした、よりシンプルで保守しやすい構成へと進化しました。主な目的は、知識の整理と共有、そして読みやすい技術記事の公開です。",
 
+              desafios: [
+                "不要な複雑さを避け、コンテンツ中心のシンプルなアーキテクチャを設計すること。",
+                "MDX を使用した記事システムと静的ページ生成の実装。",
+                "slug、タグ、日付、読了時間などの記事メタデータの整理。",
+                "読みやすさと記事間ナビゲーションを重視したクリーンな UI の設計。",
+                "長期的に記事を追加しやすいプロジェクト構成の設計。",
+              ],
+
+              aprendizados: [
+                "Markdown と React コンポーネントを組み合わせる MDX の活用。",
+                "Next.js による静的サイト生成の実装。",
+                "ファイルベースのコンテンツ管理によるブログ構成。",
+                "読書体験を重視したミニマルなインターフェース設計。",
+                "個人プロジェクトにおいて複雑さを減らすことの重要性。",
+              ],
+            },
+          },
+        },
       },
       skills: {
         sub: "日常的に使用している技術とツールです。",
@@ -870,20 +903,20 @@
           frontend: "フロントエンド",
           tools: "ツールとDevOps",
           soft: "ソフトスキル",
-          learning: "学習中"
+          learning: "学習中",
         },
         soft: {
           comunicacao: "コミュニケーション",
           equipe: "チームワーク",
           problemas: "問題解決",
           aprendizado: "継続的な学習",
-          tempo: "時間管理"
+          tempo: "時間管理",
         },
         levels: {
           basico: "初級",
           intermediario: "中級",
-          avancado: "上級"
-        }
+          avancado: "上級",
+        },
       },
       experience: {
         education: {
@@ -919,9 +952,15 @@
         channelsTitle: "その他の連絡先",
       },
       popup: {
-        success: { title: "送信完了しました！", message: "お問い合わせありがとうございます。追ってご連絡いたします。" },
-        error:   { title: "エラーが発生しました", message: "しばらくしてからもう一度お試しください。" },
-        closeLabel: "ポップアップを閉じる"
+        success: {
+          title: "送信完了しました！",
+          message: "お問い合わせありがとうございます。追ってご連絡いたします。",
+        },
+        error: {
+          title: "エラーが発生しました",
+          message: "しばらくしてからもう一度お試しください。",
+        },
+        closeLabel: "ポップアップを閉じる",
       },
       form: {
         nomeLabel: "お名前",
@@ -934,7 +973,8 @@
         sending: "送信中...",
       },
       errors: {
-        connection: "通信エラーです。インターネット接続を確認して再試行してください。"
+        connection:
+          "通信エラーです。インターネット接続を確認して再試行してください。",
       },
       footer: {
         rights: "© {year} Bryan Alvarenga. 無断複写・転載を禁じます。",
@@ -946,7 +986,8 @@
 
   function get(obj, path) {
     if (!path || typeof path !== "string") return undefined;
-    return path.split(".")
+    return path
+      .split(".")
       .reduce((acc, k) => (acc && acc[k] != null ? acc[k] : undefined), obj);
   }
 
@@ -954,9 +995,9 @@
   window.get = get;
 
   window.setAppLanguage = function setAppLanguage(lang) {
-    document.documentElement.setAttribute('lang', lang);
+    document.documentElement.setAttribute("lang", lang);
     applyLanguage(lang);
-    document.dispatchEvent(new Event('app:languagechange'));
+    document.dispatchEvent(new Event("app:languagechange"));
   };
 
   window.applyLanguage = function applyLanguage(lang) {
@@ -971,21 +1012,26 @@
       }
     });
 
-    document.querySelectorAll(
-      "[data-i18n]:not([data-i18n-attr]):not(input):not(textarea):not(select)"
-    ).forEach((el) => {
-      const key = el.getAttribute("data-i18n");
-      const value = get(dict, key);
-      if (typeof value !== "string") return;
-      el.textContent = key === "footer.rights"
-        ? value.replace("{year}", new Date().getFullYear())
-        : value;
-    });
+    document
+      .querySelectorAll(
+        "[data-i18n]:not([data-i18n-attr]):not(input):not(textarea):not(select)",
+      )
+      .forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        const value = get(dict, key);
+        if (typeof value !== "string") return;
+        el.textContent =
+          key === "footer.rights"
+            ? value.replace("{year}", new Date().getFullYear())
+            : value;
+      });
 
     document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       const attrs = (el.getAttribute("data-i18n-attr") || "")
-        .split(",").map((a) => a.trim()).filter(Boolean);
+        .split(",")
+        .map((a) => a.trim())
+        .filter(Boolean);
       const value = get(dict, key);
       if (typeof value !== "string") return;
       attrs.forEach((attr) => el.setAttribute(attr, value));
