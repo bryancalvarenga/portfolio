@@ -38,6 +38,24 @@ window.PROJECTS = {
       repo: "https://github.com/bryancalvarenga/commit-log",
     },
   },
-
+  entrelinhas: {
+    coverSrc: "./src/assets/img/entrelinhas-preview.webp",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "NestJS",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+      "Claude Code",
+      "AI Agents",
+      "Monorepo"
+    ],
+    links: {
+      demo: "https://entrelinhas-chi.vercel.app",
+      repo: "https://github.com/bryancalvarenga/entrelinhas",
+    },
+  },
   // Projetos futuros...
 };
