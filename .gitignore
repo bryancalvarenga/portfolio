@@ -63,3 +63,4 @@ coverage/
 /.docker/
 docker-compose.override.yml
 *.pid
+.vercel
