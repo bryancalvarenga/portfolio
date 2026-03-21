@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "ポートフォリオ — Bryan Alvarenga",
+    "description": "Bryan Alvarengaのポートフォリオ — Webデベロッパー (PHP, Java, Spring Boot, MySQL, Docker)。プロジェクト、スキル、お問い合わせ。",
+    "ogTitle": "ポートフォリオ — Bryan Alvarenga",
+    "ogDescription": "Web開発者 (PHP, Java, MySQL, Docker)。プロジェクト、スキル、お問い合わせ。",
+    "projectsTitle": "プロジェクト — Bryan Alvarenga",
+    "projectsDescription": "Bryan Alvarengaの全プロジェクト — Webシステム、アプリケーション、実験作品。"
+  },
+  "a11y": {
+    "skipToContent": "コンテンツへスキップ",
+    "openMenu": "メニューを開く",
+    "close": "閉じる",
+    "languageSelector": "言語セレクター"
+  },
+  "nav": {
+    "menuTitle": "メニュー",
+    "about": "自己紹介",
+    "projects": "プロジェクト",
+    "skills": "スキル",
+    "experience": "経験",
+    "contact": "お問い合わせ",
+    "letsTalk": "相談しましょう",
+    "openMenu": "メニューを開く",
+    "close": "閉じる"
+  },
+  "hero": {
+    "badge": "新しいプロジェクト受付中",
+    "title": "こんにちは、<gradient>ブライアン・アルヴァレンガ</gradient>です",
+    "text": "テクノロジーが大好きで、アイデアを実用的なシステムにするWeb開発者。PHP、Java、MySQL を中心に、Docker・Bootstrap・Tailwind の経験があります。",
+    "avatarAlt": "ブライアンのプロフィール写真",
+    "viewProjects": "作品を見る",
+    "contactMe": "連絡する"
+  },
+  "about": {
+    "title": "自己紹介",
+    "sub": "私はUnifioのソフトウェア工学の学生で、Webアプリ開発に情熱を持っています。Java、PHP、Python、HTML、CSS、JavaScriptの基礎があり、Tailwind CSSとBootstrapの実務経験があります。現在はSpring BootとLaravel、そしてMySQLを学習中。学業・個人プロジェクトを通じて、機能的で構造の良い、価値あるソリューションを作ることを目指しています。"
+  },
+  "projects": {
+    "title": "プロジェクト",
+    "sub": "最近の制作物。",
+    "viewProject": "作品を見る",
+    "code": "コード",
+    "viewAll": "全プロジェクトを見る",
+    "allTitle": "全プロジェクト",
+    "backToHome": "← ホーム",
+    "sge": {
+      "title": "SGE — アスレチック管理",
+      "desc": "PHP、MySQL、Docker、Bootstrap。イベント管理と公開カレンダー。",
+      "coverAlt": "アスレチック管理システムのプレビュー",
+      "modal": {
+        "title": "SGE — アスレチック管理",
+        "coverAlt": "公開カレンダーとイベント作成画面",
+        "coverCaption": "開発環境でのシステムプレビュー。",
+        "context": "コンテキスト",
+        "challenges": "主な課題",
+        "learnings": "学び",
+        "technologies": "技術",
+        "demoBtn": "デモを開く",
+        "repoBtn": "リポジトリを見る",
+        "contextContent": "SGE（イベント管理システム）は、UNIFIO大学の体育館で行われるスポーツおよび学術イベントの管理を近代化・一元化するために開発されたWebアプリケーションです。本プロジェクトはチーム開発として実施され、GitHub上でブランチ運用・プルリクエスト・コードレビューを用いて共同作業を行いました。また、大学のコーディネーターとの実際のヒアリングを通じて、システム要件を明確化しました。",
+        "challengesList": [
+          "2段階認証（2FA）による安全なログイン認証の実装。",
+          "ユーザー、管理者、スーパー管理者という複数レベルのアクセス制御。",
+          "ログイン不要で閲覧できる公開カレンダーの構築。",
+          "Fetch APIおよびAJAXを用いたフロントエンドとバックエンド間の非同期通信の維持。",
+          "MVCアーキテクチャに基づくプロジェクト構成とPDO・PHPMailer・Composerの統合。"
+        ],
+        "learningsList": [
+          "GitHubでの共同開発（ブランチ、コミット、PR、コードレビュー）。",
+          "大学の実案件を想定した要件定義とクライアントコミュニケーションの経験。",
+          "MVCのベストプラクティスに沿ったモジュール化PHPコンポーネントの作成。",
+          "Fetch API/AJAXを用いたフロントエンドとPHPバックエンドの安全な統合。",
+          "Dockerを活用した統一的な開発環境と容易なデプロイ実現。"
+        ]
+      }
+    },
+    "portfolio": {
+      "title": "ポートフォリオサイト",
+      "desc": "HTML5、CSS3、Bootstrap、JavaScript。自分の作品やスキルを紹介するためのサイトです。",
+      "coverAlt": "ポートフォリオサイトのプレビュー",
+      "modal": {
+        "title": "ポートフォリオサイト",
+        "coverAlt": "ポートフォリオサイトのスクリーンショット",
+        "coverCaption": "ポートフォリオサイトのプレビュー。",
+        "context": "概要",
+        "challenges": "主な課題",
+        "learnings": "学んだこと",
+        "technologies": "使用技術",
+        "demoBtn": "デモを開く",
+        "repoBtn": "リポジトリを見る",
+        "contextContent": "このポートフォリオサイトは、私のプロジェクト、スキル、経験を紹介するために開発されました。モダンでレスポンシブ、かつ軽量なデジタルショーケースとして、自分のアイデンティティを反映させることを目指しました。UI/UX、SEO、パフォーマンスに重点を置き、何度も改良を重ねて現在のデザインに至りました。",
+        "challengesList": [
+          "自分のブランドに合ったオリジナルデザインを作成すること。",
+          "IntersectionObserverを使用してスムーズなトランジションとアニメーションを実装すること。",
+          "あらゆるデバイスで完全なレスポンシブ対応を実現すること。",
+          "HTML、CSS、JSを分離したクリーンでモジュール化されたコード構造を維持すること。",
+          "GitHub Pages/Vercelを利用し、独自ドメインとHTTPSで静的デプロイを設定すること。"
+        ],
+        "learningsList": [
+          "レスポンシブデザインとアクセシビリティのベストプラクティス。",
+          "純粋なJavaScriptによる高パフォーマンスなアニメーション。",
+          "SEO最適化とメタデータ構造化。",
+          "継続的デプロイと独自ドメイン管理の実践。",
+          "スケーラブルで保守しやすい構成の構築。"
+        ]
+      }
+    },
+    "commitlog": {
+      "title": "CommitLog — 技術ブログ",
+      "desc": "ソフトウェア開発の学習内容、プロジェクト、アーキテクチャの意思決定を記録するための個人技術ブログ。",
+      "coverAlt": "技術記事の一覧を表示した CommitLog ブログのプレビュー",
+      "modal": {
+        "title": "CommitLog — 技術ブログ",
+        "coverAlt": "記事一覧が表示された CommitLog のトップページ",
+        "coverCaption": "実際に公開されているブログのプレビュー。",
+        "context": "概要",
+        "challenges": "主な課題",
+        "learnings": "学んだこと",
+        "technologies": "技術スタック",
+        "demoBtn": "ブログを開く",
+        "repoBtn": "リポジトリを見る",
+        "contextContent": "CommitLog は、ソフトウェア開発における学習、プロジェクト、設計上の考え方を記録するために作られた個人技術ブログです。最初は認証やデータベースを含むより複雑な構成として設計されましたが、その後 MDX と静的生成を中心とした、よりシンプルで保守しやすい構成へと進化しました。主な目的は、知識の整理と共有、そして読みやすい技術記事の公開です。",
+        "challengesList": [
+          "不要な複雑さを避け、コンテンツ中心のシンプルなアーキテクチャを設計すること。",
+          "MDX を使用した記事システムと静的ページ生成の実装。",
+          "slug、タグ、日付、読了時間などの記事メタデータの整理。",
+          "読みやすさと記事間ナビゲーションを重視したクリーンな UI の設計。",
+          "長期的に記事を追加しやすいプロジェクト構成の設計。"
+        ],
+        "learningsList": [
+          "Markdown と React コンポーネントを組み合わせる MDX の活用。",
+          "Next.js による静的サイト生成の実装。",
+          "ファイルベースのコンテンツ管理によるブログ構成。",
+          "読書体験を重視したミニマルなインターフェース設計。",
+          "個人プロジェクトにおいて複雑さを減らすことの重要性。"
+        ]
+      }
+    },
+    "entrelinhas": {
+      "title": "Entrelinhas — AIによる文章作成支援プラットフォーム",
+      "desc": "Next.js、NestJS、Prisma、PostgreSQL、JWT。AIを活用したライティング支援。",
+      "coverAlt": "Entrelinhasのプレビュー",
+      "modal": {
+        "title": "Entrelinhas — AIによる文章作成支援プラットフォーム",
+        "coverAlt": "テキストエディタとAIによる提案が表示されたEntrelinhasの画面",
+        "coverCaption": "AIエージェントを統合したアプリケーションのプレビュー。",
+        "context": "概要",
+        "challenges": "主な課題",
+        "learnings": "学び",
+        "technologies": "技術",
+        "demoBtn": "デモを見る",
+        "repoBtn": "リポジトリを見る",
+        "contextContent": "Entrelinhasは、AIによる文章作成支援の新しい形を探求するための実験的なアプリケーションです。本プロジェクトはモノレポ構成で開発され、Claude Codeを通じてAIエージェントを活用し、開発環境と直接連携しています。人間の思考とAIが協調し、アイデアの整理・拡張・洗練をリアルタイムで行う新しい創作フローの実現を目指しています。",
+        "challengesList": [
+          "AIエージェントを開発プロセスおよびアプリケーションに統合すること。",
+          "NestJS（バックエンド）とNext.js（フロントエンド）を用いたスケーラブルなアーキテクチャの設計。",
+          "JWTによる安全な認証の実装。",
+          "Prismaを用いた柔軟なデータモデリング。",
+          "フロントエンド、バックエンド、AIサービス間の連携の最適化。"
+        ],
+        "learningsList": [
+          "実践的なAIエージェントの活用経験。",
+          "Next.jsとNestJSによるモダンなモノレポ構成の設計。",
+          "JWTを用いた認証の実装。",
+          "PrismaとPostgreSQLによるデータベース設計。",
+          "新しい文章作成体験を探るプロダクト思考の重要性。"
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "スキル",
+    "sub": "日常的に使用している技術とツールです。",
+    "backend": "バックエンド",
+    "frontend": "フロントエンド",
+    "tools": "ツールとDevOps",
+    "soft": "ソフトスキル",
+    "learning": "学習中",
+    "communication": "コミュニケーション",
+    "teamwork": "チームワーク",
+    "problemSolving": "問題解決",
+    "continuousLearning": "継続的な学習",
+    "timeManagement": "時間管理",
+    "basic": "初級",
+    "intermediate": "中級",
+    "advanced": "上級"
+  },
+  "experience": {
+    "title": "経験",
+    "education": {
+      "title": "学歴",
+      "course": "ソフトウェア工学 — UNIFIO",
+      "period": "2025 — 2028",
+      "desc": "論理・プログラミング・要件工学・モデリング・データベース・テスト・アジャイル手法など、開発とマネジメントに焦点を当てたカリキュラム。実践的なプロジェクトとベストプラクティスを重視。",
+      "coursesTitle": "補完コース",
+      "courses": [
+        "Cisco — JavaScript Essentials 1",
+        "Alura — HTML & CSS for Web Projects",
+        "Alura — Object-Oriented Java"
+      ]
+    },
+    "jobs": {
+      "title": "職務経験",
+      "sge": {
+        "title": "SGE — UNIFIOイベント管理システム",
+        "period": "2025・完了",
+        "desc": "UNIFIOのイベントを管理する実運用の学術システムをフルスタックで開発。",
+        "items": [
+          "スタック：PHP 8.2、MySQL、Docker、Bootstrap、MVC",
+          "GitHubでのブランチ運用とPR",
+          "PHPMailerと権限管理",
+          "要件定義の打合せと技術ドキュメント作成"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "sub": "ご要望をお聞かせください。追ってご連絡します。",
+    "sla": "営業日24時間以内に返信します。",
+    "channelsTitle": "その他の連絡先",
+    "nameLabel": "お名前",
+    "emailLabel": "メールアドレス",
+    "messageLabel": "メッセージ",
+    "send": "送信",
+    "sending": "送信中...",
+    "nameInvalid": "お名前を入力してください。",
+    "emailInvalid": "有効なメールアドレスを入力してください。",
+    "messageInvalid": "メッセージを入力してください。",
+    "successTitle": "送信完了しました！",
+    "successMessage": "お問い合わせありがとうございます。追ってご連絡いたします。",
+    "errorTitle": "エラーが発生しました",
+    "errorMessage": "しばらくしてからもう一度お試しください。",
+    "errorConnection": "通信エラーです。インターネット接続を確認して再試行してください。"
+  },
+  "footer": {
+    "rights": "© {year} Bryan Alvarenga. 無断複写・転載を禁じます。",
+    "copy": "Next.js と少しのパープルで構築"
+  },
+  "ui": {
+    "close": "閉じる",
+    "escCloses": "ESCで閉じる",
+    "closePopup": "通知を閉じる"
+  }
+}

@@ -1,3 +1,9 @@
+# === Next.js ===
+.next/
+out/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
 # === Dependências e builds ===
 node_modules/
 dist/
@@ -39,22 +45,11 @@ lerna-debug.log*
 *.map
 
 # === Cache de ferramentas ===
-/.sass-cache
-/.parcel-cache
 /.eslintcache
-
-# === Gerados por VS Code Live Server ===
-*.localhost
-*.tmp.html
+.eslintcache
 
 # === Gerados por sistemas de build ===
 coverage/
-report/
-reports/
-
-# === Backup de uploads ou imagens originais ===
-/src/assets/originals/
-/src/assets/raw/
 
 # === Arquivos de design ou docs locais ===
 *.psd

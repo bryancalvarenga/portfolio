@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "Portfolio — Bryan Alvarenga",
+    "description": "Bryan Alvarenga's portfolio — Web developer (PHP, Java, Spring Boot, MySQL, Docker). View projects, skills and get in touch.",
+    "ogTitle": "Portfolio — Bryan Alvarenga",
+    "ogDescription": "Web Developer (PHP, Java, MySQL, Docker). Projects, skills and contact.",
+    "projectsTitle": "Projects — Bryan Alvarenga",
+    "projectsDescription": "All Bryan Alvarenga's projects — web systems, applications and experiments."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "close": "Close",
+    "languageSelector": "Language selector"
+  },
+  "nav": {
+    "menuTitle": "Menu",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact",
+    "letsTalk": "Let's talk",
+    "openMenu": "Open menu",
+    "close": "Close"
+  },
+  "hero": {
+    "badge": "Available for new projects",
+    "title": "Hi, I'm <gradient>Bryan Alvarenga</gradient>",
+    "text": "Web developer passionate about technology, turning ideas into working systems. Backend-focused with PHP, Java and MySQL; experienced with Docker, Bootstrap and Tailwind.",
+    "avatarAlt": "Bryan's profile photo",
+    "viewProjects": "View projects",
+    "contactMe": "Contact me"
+  },
+  "about": {
+    "title": "About",
+    "sub": "I'm a Software Engineering student at Unifio, passionate about building web applications. Strong foundation in Java, PHP, Python, HTML, CSS and JavaScript, with hands-on experience in Tailwind CSS and Bootstrap. Currently learning Spring Boot and Laravel, plus MySQL. I focus on constant improvement through academic and personal projects to build functional, well-structured, impactful solutions."
+  },
+  "projects": {
+    "title": "Projects",
+    "sub": "Some recent work.",
+    "viewProject": "View project",
+    "code": "Code",
+    "viewAll": "View all projects",
+    "allTitle": "All projects",
+    "backToHome": "← Home",
+    "sge": {
+      "title": "SGE — Athletics Management",
+      "desc": "PHP, MySQL, Docker, Bootstrap. Event management and public calendar.",
+      "coverAlt": "Preview of the Athletics Management System",
+      "modal": {
+        "title": "SGE — Athletics Management",
+        "coverAlt": "SGE screen with public calendar and event creation",
+        "coverCaption": "System preview in development environment.",
+        "context": "Context",
+        "challenges": "Key challenges",
+        "learnings": "Key learnings",
+        "technologies": "Technologies",
+        "demoBtn": "Open demo",
+        "repoBtn": "View repository",
+        "contextContent": "The SGE (Event Management System) is a web application developed for UNIFIO University to modernize and centralize the management of sports and academic events held at the institution's gymnasium. The project was built collaboratively using GitHub version control (branches, pull requests, and code reviews). We also conducted a real requirement-gathering interview with the university coordination to understand their needs.",
+        "challengesList": [
+          "Implement secure authentication with two-factor verification (2FA).",
+          "Handle multiple access levels (user, admin, and superadmin).",
+          "Build a public calendar view without requiring login.",
+          "Maintain asynchronous communication between front-end and back-end using Fetch API and AJAX.",
+          "Structure the project under an MVC architecture and integrate PDO, PHPMailer, and Composer."
+        ],
+        "learningsList": [
+          "Collaborative development using GitHub branches, commits, PRs, and reviews.",
+          "Real experience conducting requirement analysis with institutional clients.",
+          "Creation of modular PHP components following MVC best practices.",
+          "Secure integration between front-end (Fetch API/AJAX) and PHP back-end.",
+          "Containerized setup using Docker for consistent and reproducible environments."
+        ]
+      }
+    },
+    "portfolio": {
+      "title": "Personal Portfolio",
+      "desc": "HTML5, CSS3, Bootstrap, JavaScript. A showcase to present my work and skills.",
+      "coverAlt": "Preview of the Personal Portfolio",
+      "modal": {
+        "title": "Personal Portfolio",
+        "coverAlt": "Screenshot of the Personal Portfolio",
+        "coverCaption": "Preview of the Personal Portfolio.",
+        "context": "Overview",
+        "challenges": "Main Challenges",
+        "learnings": "Key Learnings",
+        "technologies": "Technologies",
+        "demoBtn": "Open demo",
+        "repoBtn": "View repository",
+        "contextContent": "The Personal Portfolio was developed to present my projects, skills, and experience as a web developer. The goal was to create a modern, responsive, and lightweight digital showcase that reflects my personal and professional identity. The project was designed from scratch with a focus on UI/UX details, SEO, and performance, going through multiple iterations to reach the current design.",
+        "challengesList": [
+          "Designing an original layout aligned with my personal brand.",
+          "Implementing smooth transitions and animations using IntersectionObserver.",
+          "Ensuring full responsiveness across devices and screen sizes.",
+          "Maintaining clean and modular code structure (HTML, CSS, and JS separated).",
+          "Setting up static deploy with a custom domain and HTTPS via GitHub Pages/Vercel."
+        ],
+        "learningsList": [
+          "Responsive design and accessibility best practices.",
+          "Performant animations using pure JavaScript.",
+          "SEO optimization and metadata structuring.",
+          "Continuous deployment and custom domain management.",
+          "Building a scalable and easily maintainable structure."
+        ]
+      }
+    },
+    "commitlog": {
+      "title": "CommitLog — Technical Blog",
+      "desc": "Personal blog to document learning, projects and architectural decisions during software development.",
+      "coverAlt": "Preview of CommitLog blog showing a list of technical posts.",
+      "modal": {
+        "title": "CommitLog — Technical Blog",
+        "coverAlt": "CommitLog homepage displaying a list of articles",
+        "coverCaption": "Preview of the blog in production.",
+        "context": "Overview",
+        "challenges": "Key Challenges",
+        "learnings": "Key Learnings",
+        "technologies": "Technologies",
+        "demoBtn": "Open Blog",
+        "repoBtn": "View Repository",
+        "contextContent": "CommitLog is a personal technical blog created to document learning, projects and reflections about software development. The project was initially designed with a more complex architecture including authentication and database integration, but later evolved into a simpler and more maintainable approach based on MDX and static generation. The main goal is to prioritize writing, clarity and knowledge sharing.",
+        "challengesList": [
+          "Designing a simple architecture focused on content instead of unnecessary complexity.",
+          "Building a post system using MDX with static page generation.",
+          "Structuring metadata for articles such as slug, tags, date and reading time.",
+          "Creating a clean layout focused on readability and navigation between posts.",
+          "Organizing the project for easy maintenance and long-term content publishing."
+        ],
+        "learningsList": [
+          "Using MDX to combine Markdown with React components.",
+          "Implementing static site generation with Next.js.",
+          "Organizing blog content using a file-based structure.",
+          "Designing minimalist interfaces focused on reading experience.",
+          "Understanding the importance of reducing complexity in personal projects."
+        ]
+      }
+    },
+    "entrelinhas": {
+      "title": "Entrelinhas — AI-assisted Writing Platform",
+      "desc": "Next.js, NestJS, Prisma, PostgreSQL, JWT. AI-powered writing and idea refinement.",
+      "coverAlt": "Preview of Entrelinhas",
+      "modal": {
+        "title": "Entrelinhas — AI-assisted Writing Platform",
+        "coverAlt": "Entrelinhas interface with text editor and AI-generated suggestions",
+        "coverCaption": "Application preview with integrated AI agents.",
+        "context": "Context",
+        "challenges": "Key challenges",
+        "learnings": "Key learnings",
+        "technologies": "Technologies",
+        "demoBtn": "Open demo",
+        "repoBtn": "View repository",
+        "contextContent": "Entrelinhas is an experimental application designed to explore new forms of AI-assisted writing. The project was built using a monorepo architecture and leverages AI agents (via Claude Code) capable of interacting directly with the development environment. Its core idea is to create a collaborative workflow where human thinking and AI systems work together to organize, expand, and refine ideas in real time.",
+        "challengesList": [
+          "Integrate AI agents into both the development workflow and the application itself.",
+          "Design a scalable architecture using NestJS (backend) and Next.js (frontend).",
+          "Implement secure authentication using JWT.",
+          "Model flexible and dynamic data structures with Prisma.",
+          "Coordinate communication between frontend, backend, and AI services."
+        ],
+        "learningsList": [
+          "Practical use of AI agents in real-world software development.",
+          "Structuring modern applications with Next.js and NestJS in a monorepo setup.",
+          "Implementing authentication with JWT.",
+          "Database modeling using Prisma and PostgreSQL.",
+          "Product-oriented thinking when designing new writing experiences."
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "sub": "Technologies and tools I use in my daily work.",
+    "backend": "Back-end",
+    "frontend": "Front-end",
+    "tools": "Tools & DevOps",
+    "soft": "Soft skills",
+    "learning": "Currently learning",
+    "communication": "Communication",
+    "teamwork": "Teamwork",
+    "problemSolving": "Problem solving",
+    "continuousLearning": "Continuous learning",
+    "timeManagement": "Time management",
+    "basic": "Basic",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "experience": {
+    "title": "Experience",
+    "education": {
+      "title": "Education",
+      "course": "Software Engineering — UNIFIO",
+      "period": "2025 — 2028",
+      "desc": "Program focused on software development and management: logic, programming, requirements engineering, modeling, databases, testing and agile methods. Emphasis on practical projects and best practices.",
+      "coursesTitle": "Complementary Courses",
+      "courses": [
+        "Cisco — JavaScript Essentials 1",
+        "Alura — Track: HTML & CSS for Web Projects",
+        "Alura — Track: Object-Oriented Java"
+      ]
+    },
+    "jobs": {
+      "title": "Experience",
+      "sge": {
+        "title": "SGE — UNIFIO Event Management System",
+        "period": "2025 • Completed",
+        "desc": "Full-stack development of a real academic system for managing UNIFIO events.",
+        "items": [
+          "Stack: PHP 8.2, MySQL, Docker, Bootstrap, MVC",
+          "Version control with GitHub (branches & PRs)",
+          "PHPMailer and permission control",
+          "Requirements meetings and technical docs"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "sub": "Tell me about your needs. I'll get back to you soon.",
+    "sla": "Replies within 24 business hours.",
+    "channelsTitle": "Other channels",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "nameInvalid": "Please enter your name.",
+    "emailInvalid": "Please enter a valid email.",
+    "messageInvalid": "Please write a message.",
+    "successTitle": "Message sent!",
+    "successMessage": "Thank you for reaching out. I'll get back to you soon.",
+    "errorTitle": "Something went wrong",
+    "errorMessage": "Please try again in a moment.",
+    "errorConnection": "Connection error. Please check your internet and try again."
+  },
+  "footer": {
+    "rights": "© {year} Bryan Alvarenga. All rights reserved.",
+    "copy": "Built with Next.js + a touch of purple"
+  },
+  "ui": {
+    "close": "Close",
+    "escCloses": "ESC closes",
+    "closePopup": "Close notification"
+  }
+}
